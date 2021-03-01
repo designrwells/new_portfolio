@@ -3,9 +3,12 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const Navbar = styled.nav`
-	height: 60px;
-	background: #000;
+	z-index: 100;
+	height: 50px;
+	margin-bottom: -50px;
+	background-color: rgb(0,0,0,0.0);
 	padding: 0rem calc((100vw - 1850px) / 2);
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

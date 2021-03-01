@@ -10,24 +10,22 @@ export const fade = {
 export const pullDown = {
 	in: {
 		opacity: 1,
-		y: 0,
-		scale: 1
+		y: 0
 	},
 	out: {
 		opacity: 0,
-		y: '-100vh',
-		scale: 0.3
+		y: '-100vh'
 	}
 };
 
 export const animationThree = {
 	in: {
 		opacity: 1,
-		x: -300,
+		x: -300
 	},
 	out: {
 		opacity: 0,
-		x: 300,
+		x: 300
 	},
 	end: {
 		x: 0,
