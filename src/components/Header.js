@@ -32,11 +32,11 @@ const Header = () => {
 		<Navbar>
 		<Logo to='/'>Darrin Wells</Logo>
 			<NavItems>
-				<NavbarLink>Home</NavbarLink>
-				<NavbarLink>Services</NavbarLink>
-				<NavbarLink>About</NavbarLink>
-				<NavbarLink>Portfolio</NavbarLink>
-				<NavbarLink>Contact</NavbarLink>
+				<NavbarLink to='/'>Home</NavbarLink>
+				<NavbarLink to='/services'>Services</NavbarLink>
+				<NavbarLink to='/about'>About</NavbarLink>
+				<NavbarLink to='/portfolio'>Portfolio</NavbarLink>
+				<NavbarLink to='/contact'>Contact</NavbarLink>
 			</NavItems>
 		</Navbar>
 	);

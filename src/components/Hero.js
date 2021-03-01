@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.section`
-	background: #323232;
+	background: ${({bgcolor}) => bgcolor && bgcolor};
 	height: 100vh;
 	display: flex;
 	justify-content: flex-start;
@@ -41,14 +41,10 @@ const Container = styled.div`
 	}
 `;
 
-const Hero = () => {
+const Hero = ({ bgcolor }) => {
 	return (
-		<Section>
-			<Container>
-				<h1>title</h1>
-				<p>Description</p>
-				<button>Learn more</button>
-			</Container>
+		<Section bgcolor={bgcolor}>
+	
 		</Section>	
 	);
 };
