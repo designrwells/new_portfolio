@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import { motion } from 'framer-motion';
-import {pullDown} from '../animations';
+import { pullDown, transition } from '../animations';
 import styled from 'styled-components';
 
 const Section = styled.section`
@@ -20,6 +20,7 @@ const Services = () => {
 			animate='in' 
 			exit='out' 
 			variants={pullDown}
+			transition={transition}
 			>
 		
 			<Section>

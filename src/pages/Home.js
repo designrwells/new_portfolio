@@ -5,12 +5,11 @@ import { fade, transition } from '../animations';
 import styled from 'styled-components';
 
 const Section = styled.section`
-	background: #000;
+	background: #222;
 	height: 100vh;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-end;
-
 `;
 
 
@@ -22,6 +21,7 @@ const Home = () => {
 			animate='in' 
 			exit='out' 
 			variants={fade}
+			transition={transition}
 			>
 		
 			<Section>
