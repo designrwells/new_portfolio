@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+//Services page card styles
+.serv-card:hover .serv-card-inner {
+	transform: rotateY(180deg);
+}

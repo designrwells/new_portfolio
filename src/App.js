@@ -3,7 +3,7 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { AnimatePresence } from 'framer-motion';
 import styled from 'styled-components';
-import Header from './components/Header';
+import HamburgerMenu from './components/hamburgerMenu';
 import GlobalStyle from './globalStyles';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,8 +12,8 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 
 const Body = styled.section`
-  overflow-y: hidden;
   overflow-x: hidden;
+  overflow-y: hidden;
   background: #222;
 `;
 
@@ -22,10 +22,9 @@ function App()  {
   return ( 
 
     <Body> 
-
     <GlobalStyle />
-      <Header />
       <AnimatePresence exitBeforeEnter>
+       <HamburgerMenu />
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
