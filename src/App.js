@@ -23,7 +23,7 @@ function App()  {
 
     <Body> 
     <GlobalStyle />
-      <AnimatePresence exitBeforeEnter>
+      
        <HamburgerMenu />
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact component={Home} />
@@ -32,7 +32,7 @@ function App()  {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
         </Switch>
-      </AnimatePresence>
+     
     </Body>
   );
 }

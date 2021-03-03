@@ -1,9 +1,10 @@
 //--MENU ANIMATIONS--
 export const menuTransition = { 
 	type: 'tween',
-	duration: 0.22,
+	duration: 0.2,
 	delay: 0.1,
-}
+	when: 'afterChildren'
+};
 export const menuVariants = {
 	open: {
 		transform: 'translateY(0%)',
@@ -13,25 +14,33 @@ export const menuVariants = {
 	closed: {
 		transform: 'translateY(0%)',
 		opacity: 0,
-		display: 'none'
+		transitionEnd: { 
+			display: 'none'
+		}
 	},
-}
+};
 export const navItemVariants = {
 	open: {
 		transform: 'translateY(0vh)',
 		opacity: 1,
-		
+		transition: {
+			type: 'tween',
+			duration: 1,
+		},
 	},
 	closed: {
 		transform: 'translateY(-5vh)',
 		opacity: 0,
-	
+		transition: {
+			type: 'tween',
+			duration: 0.12,
+		},
 	},
-}
+};
 export const navItemTransition = { 
 	type: 'tween',
-	duration: 0.5,
-	ease: [0.67, 0.67, 0.13, 0.07] 
+	duration: 2,
+	delay: 1.5,
 }
 
 //--PAGE ANIMATIONS--

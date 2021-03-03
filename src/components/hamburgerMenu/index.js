@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import MenuToggle from './menuToggle';
-import { menuTransition, menuVariants, navItemVariants, navItemTransition } from '../../animations';
+import { menuTransition, menuVariants, navItemVariants } from '../../animations';
 
 import { Link } from 'react-router-dom';
 
@@ -36,10 +36,6 @@ const MenuContainer = styled(motion.div)`
 //Nav styles
 const Navbar = styled.nav`
 	z-index: 100;
-	height: 50px;
-	margin-bottom: -50px;
-	background-color: rgb(0,0,0,0.0);
-	padding: 0rem calc((100vw - 1850px) / 2);
 	position: absolute;
 	right: 15vw;
 	top: 15vh;
@@ -56,7 +52,7 @@ const NavbarLink = styled(Link)`
 	color: #fff;
 	font-weight: bold;
 	font-size: 4vw;
-	padding: .45rem;
+	padding: .4rem;
 	cursor: pointer;
   	&:hover {
    		a {
@@ -86,18 +82,20 @@ const HamburgerMenu = () => {
 	return (
 		<HamburgerMenuContainer>
 			<MenuToggle toggle={toggleMenu} isOpen={isOpen} />	
-			<MenuContainer 
+			<MenuContainer exitBeforeEnter
+				key='menu'
 				initial={false} 
 				animate={isOpen ? 'open' : 'closed'}
 				variants={menuVariants}
 				transition={menuTransition}
+				exit='closed'
 				>
 				<Navbar>
-					<NavItems
+					<NavItems exitBeforeEnter
+						key='navItems'
 						initial={false}
 						animate={isOpen ? 'open' : 'closed'}
-						variants={navItemVariants}
-						transition={navItemTransition}
+						variants={navItemVariants}	
 					>
 						<NavbarLink to='/' onClick={toggleMenu}>HOME</NavbarLink>
 						<NavbarLink to='/services' onClick={toggleMenu}>SERVICES</NavbarLink>
@@ -107,6 +105,7 @@ const HamburgerMenu = () => {
 					</NavItems>
 				</Navbar>
 			</MenuContainer>
+			
 		</HamburgerMenuContainer>
 	);
 };
