@@ -45,7 +45,7 @@ const Navbar = styled.nav`
 	top: 15vh;
 `;
 
-const NavItems = styled.div`
+const NavItems = styled(motion.div)`
 	display: flex;
 	justify-content: center;
 	flex-direction: column;

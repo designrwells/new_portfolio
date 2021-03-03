@@ -18,20 +18,20 @@ export const menuVariants = {
 }
 export const navItemVariants = {
 	open: {
-		transform: 'translateY(100%)',
+		transform: 'translateY(0vh)',
 		opacity: 1,
 		
 	},
 	closed: {
-		transform: 'translateY(0%)',
-		opacity: 1,
+		transform: 'translateY(-5vh)',
+		opacity: 0,
 	
 	},
 }
 export const navItemTransition = { 
 	type: 'tween',
-	duration: 0.4,
-	delay: 0.1,
+	duration: 0.5,
+	ease: [0.67, 0.67, 0.13, 0.07] 
 }
 
 //--PAGE ANIMATIONS--
