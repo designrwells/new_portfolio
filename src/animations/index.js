@@ -3,7 +3,7 @@ export const menuTransition = {
 	type: 'tween',
 	duration: 0.2,
 	delay: 0.1,
-	when: 'afterChildren'
+	staggerChildren: 0.5,
 };
 export const menuVariants = {
 	open: {

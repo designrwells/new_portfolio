@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import MenuToggle from './menuToggle';
 import { menuTransition, menuVariants, navItemVariants } from '../../animations';
-
 import { Link } from 'react-router-dom';
+import '../../css/nav.scss'
 
 const HamburgerMenuContainer = styled.div`
 	display: flex;
@@ -25,7 +25,7 @@ const HamburgerIcon = styled.div`
 const MenuContainer = styled(motion.div)`
 	height: 100%;
 	width: 100%;
-	background-color: #333;
+	background-color: #222;
 	z-index: 90;
 	position: fixed;
 	top: 0;
@@ -37,7 +37,7 @@ const MenuContainer = styled(motion.div)`
 const Navbar = styled.nav`
 	z-index: 100;
 	position: absolute;
-	right: 15vw;
+	right: 18vw;
 	top: 15vh;
 `;
 
@@ -48,30 +48,27 @@ const NavItems = styled(motion.div)`
 `;
 
 const NavbarLink = styled(Link)`
+	font-family: Firestorm, sans-serif; 
 	text-decoration: none;
-	color: #fff;
 	font-weight: bold;
-	font-size: 4vw;
-	padding: .4rem;
+	font-size: 3.5vw;
+	margin: .7rem;
 	cursor: pointer;
-  	&:hover {
-   		a {
-    	color: #b70000;
-    	}
-    }
-	`;
+  
+`;
 
-const variants = {
-  show: {
-    transform: "translateX(0em)",
-    opacity: 1,
-  },
-  hide: {
-    transform: "translateX(5em)",
-    opacity: 0,
-  },
-};
-
+const SocialLinks = styled(motion.div)`
+	display: flex;
+	justify-content: left;
+	a {
+		font-size: 1.8vw;
+		text-decoration: none;
+		color: rgba(255,255,255,0.5);
+		margin: 6rem 3% 0 3%;
+	}
+	
+	
+`;
 
 const HamburgerMenu = () => {
 	const [isOpen, setOpen] = useState(false);
@@ -97,11 +94,23 @@ const HamburgerMenu = () => {
 						animate={isOpen ? 'open' : 'closed'}
 						variants={navItemVariants}	
 					>
-						<NavbarLink to='/' onClick={toggleMenu}>HOME</NavbarLink>
-						<NavbarLink to='/services' onClick={toggleMenu}>SERVICES</NavbarLink>
-						<NavbarLink to='/about' onClick={toggleMenu}>ABOUT</NavbarLink>
-						<NavbarLink to='/portfolio' onClick={toggleMenu}>PORTFOLIO</NavbarLink>
-						<NavbarLink to='/contact' onClick={toggleMenu}>CONTACT</NavbarLink>
+						<NavbarLink className='glitch' data-text="HOME" to='/' onClick={toggleMenu}>HOME</NavbarLink>
+						<NavbarLink className='glitch' data-text="SERVICES" to='/services' onClick={toggleMenu}>SERVICES</NavbarLink>
+						<NavbarLink className='glitch' data-text="ABOUT" to='/about' onClick={toggleMenu}>ABOUT</NavbarLink>
+						<NavbarLink className='glitch' data-text="PORTFOLIO" to='/portfolio' onClick={toggleMenu}>PORTFOLIO</NavbarLink>
+						<NavbarLink className='glitch' data-text="CONTACT" to='/contact' onClick={toggleMenu}>CONTACT</NavbarLink>
+						<SocialLinks 
+							key='socials'
+							initial={false}
+							animate={isOpen ? 'open' : 'closed'}
+							variants={navItemVariants}	
+						>
+							<a href="http://www.facebook.com/darrin.wells88"><i class="fa fa-facebook"></i></a>
+							<a href="http://www.instagram.com/designrwells/"><i class="fa fa-instagram"></i></a>
+							<a href="http://twitter.com/DesignrWells"><i class="fa fa-twitter"></i></a>
+							<a href="http://drivenimage.deviantart.com/"><i class="fa fa-deviantart"></i></a>
+							<a href="http://www.linkedin.com/in/darrinwells"><i class="fa fa-linkedin"></i></a>
+						</SocialLinks>
 					</NavItems>
 				</Navbar>
 			</MenuContainer>
