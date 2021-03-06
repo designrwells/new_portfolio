@@ -103,6 +103,41 @@ export const transition = {
 	duration: 0.4
 };
 
+export const cardUpContainer = {
+	show: {
+		transition: {
+			type: 'tween',
+			duration: 1.3,
+			staggerChildren: 0.12,
+			delay: 0.3
+		},
+	},
+	hide: {
+		transition: {
+			type: 'tween',
+			duration: 0.12,
+		},
+	},
+}
+export const cardUp = {
+	show: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			type: 'tween',
+			duration: 1,
+			staggerChildren: 0.5,
+		},
+	},
+	hide: {
+		opacity: 0,
+		y: '-40vh',
+		transition: {
+			type: 'tween',
+			duration: 0.12,
+		},
+	}
+};
 
 
 

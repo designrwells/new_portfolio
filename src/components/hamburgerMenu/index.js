@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import MenuToggle from './menuToggle';
 import { menuTransition, menuVariants, navItemVariants } from '../../animations';
 import { Link } from 'react-router-dom';
-import '../../css/nav.scss'
 
+//Hamburger icon styling animation
 const HamburgerMenuContainer = styled.div`
 	display: flex;
 	position: absolute;
@@ -13,73 +13,75 @@ const HamburgerMenuContainer = styled.div`
 	right: 38px;
 `;
 
-//Hamburger icon styling animation
-const HamburgerIcon = styled.div`
-	color: ${({ reverseColor }) => reverseColor ? '#000' : '#fff'};
-	cursor: pointer;
-	z-index: 100;
-	transition: all 250ms ease-in-out;
-`;
-
-
+//Menu wrapper/backdrop
 const MenuContainer = styled(motion.div)`
 	height: 100%;
 	width: 100%;
-	background-color: #222;
+	background-color: #131226;
 	z-index: 90;
 	position: fixed;
 	top: 0;
 	right: 0;
 	user-select: none;
-	padding: 1em 2.5em;
 `;
+
 //Nav styles
 const Navbar = styled.nav`
 	z-index: 100;
-	position: absolute;
-	right: 18vw;
-	top: 15vh;
+	display: flex;
+	justify-content: center;
+	margin: 15vh 0 0 30vw;
 `;
-
 const NavItems = styled(motion.div)`
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 `;
-
 const NavbarLink = styled(Link)`
-	font-family: Firestorm, sans-serif; 
 	text-decoration: none;
-	font-weight: bold;
-	font-size: 3.5vw;
-	margin: .7rem;
+	font-family: 'Biryani', sans-serif;
+	font-size: clamp(2rem, 4.4vw, 95px);
+	line-height: 1.25;
 	cursor: pointer;
-  
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(to right, #1CFF6B 32%, #b5dbff 37%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 380% 100%;
+	background-position: 100%;
+	transition: background-position 850ms;
+  	
+  	:hover {
+  		background-position: 0 100%;
+	}
 `;
-
 const SocialLinks = styled(motion.div)`
 	display: flex;
 	justify-content: left;
 	a {
-		font-size: 1.8vw;
+		font-size: clamp(1.3rem, 1.8vw, 40px);
 		text-decoration: none;
-		color: rgba(255,255,255,0.5);
+		color: rgba(181, 219, 255,0.5);
 		margin: 6rem 3% 0 3%;
 	}
-	
-	
+	a:hover {
+		color: #b5dbff;
+	}
 `;
+
 
 const HamburgerMenu = () => {
 	const [isOpen, setOpen] = useState(false);
 	const toggleMenu = () => {
 		setOpen(!isOpen);
 	};
-
 	return (
 		<HamburgerMenuContainer>
 			<MenuToggle toggle={toggleMenu} isOpen={isOpen} />	
-			<MenuContainer exitBeforeEnter
+			<MenuContainer  id='ex1'
+				exitBeforeEnter	
 				key='menu'
 				initial={false} 
 				animate={isOpen ? 'open' : 'closed'}
@@ -88,17 +90,18 @@ const HamburgerMenu = () => {
 				exit='closed'
 				>
 				<Navbar>
-					<NavItems exitBeforeEnter
+					<NavItems id='ex1-layer'	
+						exitBeforeEnter
 						key='navItems'
 						initial={false}
 						animate={isOpen ? 'open' : 'closed'}
 						variants={navItemVariants}	
 					>
-						<NavbarLink className='glitch' data-text="HOME" to='/' onClick={toggleMenu}>HOME</NavbarLink>
-						<NavbarLink className='glitch' data-text="SERVICES" to='/services' onClick={toggleMenu}>SERVICES</NavbarLink>
-						<NavbarLink className='glitch' data-text="ABOUT" to='/about' onClick={toggleMenu}>ABOUT</NavbarLink>
-						<NavbarLink className='glitch' data-text="PORTFOLIO" to='/portfolio' onClick={toggleMenu}>PORTFOLIO</NavbarLink>
-						<NavbarLink className='glitch' data-text="CONTACT" to='/contact' onClick={toggleMenu}>CONTACT</NavbarLink>
+						<NavbarLink className='navlink' data-text="HOME" to='/' onClick={toggleMenu}>HOME</NavbarLink>
+						<NavbarLink className='navlink' data-text="SERVICES" to='/services' onClick={toggleMenu}>SERVICES</NavbarLink>
+						<NavbarLink className='navlink' data-text="ABOUT" to='/about' onClick={toggleMenu}>ABOUT</NavbarLink>
+						<NavbarLink className='navlink' data-text="PORTFOLIO" to='/portfolio' onClick={toggleMenu}>PORTFOLIO</NavbarLink>
+						<NavbarLink className='navlink' data-text="CONTACT" to='/contact' onClick={toggleMenu}>CONTACT</NavbarLink>
 						<SocialLinks 
 							key='socials'
 							initial={false}

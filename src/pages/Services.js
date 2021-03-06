@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import { motion } from 'framer-motion';
-import { pullDown, transition } from '../animations';
+import { pullDown, transition, cardUp, cardUpContainer } from '../animations';
 import styled from 'styled-components';
 import '../css/services.css';
 
@@ -10,29 +10,26 @@ const Section = styled.section`
 	min-height: 100vh;
 `;
 
-const Row = styled.div`
+const Row = styled(motion.div)`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-top: 12%;
 `;
 
-const Card = styled.div`
+const Card = styled(motion.div)`
 	height: clamp(300px, 400px, 400px);
 	width: clamp(250px, 22vw, 300px);
 	margin: 2rem;
-
 `;
 
 const CardInner = styled.div`
-	
 	width: 100%;
 	height: 100%;
 	transition: transform 0.6s;
 	transform-style: preserve-3d;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	background-color: #43a45a;
-	border-radius: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -44,15 +41,27 @@ const CardInner = styled.div`
 const CardFront = styled.div`
 	color: #fff;
 	position: absolute;
-	padding: 10px;
+	padding: 10px 10px 30px 10px;
   	-webkit-backface-visibility: hidden;
   	backface-visibility: hidden;
-  	padding: 15px;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
 
   	h1 {
-		font-size: clamp(1.5rem,1.8vw,2.5rem);
+  		text-transform: uppercase;
+  		font-family: 'Biryani', sans-serif;
+  		line-height: 1.3;
+		font-size: clamp(1.5rem,1.8vw,2rem);
 		margin-bottom: 0.5rem;
 		text-align: center;
+		padding: 20% 0 17% 0;
+  		border-bottom: solid 3px;
+	}
+	i {
+		font-size: clamp(4rem,4vw,6rem);
+		margin: 30px;
 	}
 `;
 const CardBack = styled.div`
@@ -60,7 +69,7 @@ const CardBack = styled.div`
 	border-radius: 10px;
 	background-color: #43a45a;
 	position: absolute;
-	padding: 18px;
+	padding: 23px;
   	-webkit-backface-visibility: hidden;
   	backface-visibility: hidden;
   	transform: rotateY(180deg);
@@ -76,12 +85,17 @@ const Services = () => {
 			transition={transition}
 			>
 			<Section>
-				<Row>
+				<Row exitBeforeEnter
+						key='navItems'
+						initial='hide'
+						animate='show'
+						variants={cardUpContainer}	>
 					
-					<Card>
+					<Card variants={cardUp}>
 						<CardInner>
 							<CardFront>
 								<h1>Graphic Design</h1>
+								<i class="fas fa-pencil-ruler"></i>
 							</CardFront>
 							<CardBack>
 								<p>Artworks, illustrations, outdoor/indoor signage, CD/DVD/book cover & booklets, 
@@ -92,10 +106,11 @@ const Services = () => {
 						</CardInner>
 					</Card>
 					
-					<Card>
+					<Card variants={cardUp}>
 						<CardInner>
 							<CardFront>
 								<h1>Branding & Identity</h1>
+								<i class="far fa-copyright"></i>
 							</CardFront>
 							<CardBack>
 								<p>Logos, stationery (business cards, envelopes, letterheads, etc.), 
@@ -107,10 +122,11 @@ const Services = () => {
 							</CardBack>
 						</CardInner>
 					</Card>
-					<Card>
+					<Card variants={cardUp}>
 						<CardInner>
 							<CardFront>
 								<h1>Web Development</h1>
+								<i class="fas fa-laptop-code"></i>
 							</CardFront>
 							<CardBack>
 								<p>Building custom, up-to-date websites with responsive design and modern appeal 
@@ -121,10 +137,11 @@ const Services = () => {
 							</CardBack>
 						</CardInner>
 					</Card>
-					<Card>
+					<Card variants={cardUp}>
 						<CardInner>
 							<CardFront>
-								<h1>Photography & Photo Services</h1>
+								<h1>Photo Services</h1>
+								<i class="fas fa-camera-retro"></i>
 							</CardFront>
 							<CardBack>
 								<p>Photo shoots, live events, business/product photography, and landscapes - for 

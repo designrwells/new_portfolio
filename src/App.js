@@ -23,7 +23,6 @@ function App()  {
 
     <Body> 
     <GlobalStyle />
-      
        <HamburgerMenu />
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact component={Home} />
