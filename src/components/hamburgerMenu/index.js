@@ -17,7 +17,7 @@ const HamburgerMenuContainer = styled.div`
 const MenuContainer = styled(motion.div)`
 	height: 100%;
 	width: 100%;
-	background-color: #131226;
+	background-color: #1A3B5B;
 	z-index: 90;
 	position: fixed;
 	top: 0;
@@ -45,13 +45,13 @@ const NavbarLink = styled(Link)`
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
-	background: linear-gradient(to right, #1CFF6B 32%, #b5dbff 37%);
+	background: linear-gradient(to right, #D2D03F 32%, #DEF2E9 37%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-size: 380% 100%;
 	background-position: 100%;
-	transition: background-position 850ms;
+	transition: background-position 850ms ease;
   	
   	:hover {
   		background-position: 0 100%;
@@ -63,7 +63,7 @@ const SocialLinks = styled(motion.div)`
 	a {
 		font-size: clamp(1.3rem, 1.8vw, 40px);
 		text-decoration: none;
-		color: rgba(181, 219, 255,0.5);
+		color: rgba(244, 241, 244,0.5);
 		margin: 6rem 3% 0 3%;
 	}
 	a:hover {

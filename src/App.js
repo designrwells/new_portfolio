@@ -10,6 +10,9 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import Design from './pages/portfolio/Design';
+import WebDevelopment from './pages/portfolio/WebDevelopment';
+import Photography from './pages/portfolio/Photography';
 
 const Body = styled.section`
   overflow-x: hidden;
@@ -30,6 +33,9 @@ function App()  {
           <Route path="/services" component={Services} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
+          <Route path="/portfolio/design" component={Design} />
+          <Route path="/portfolio/web-development" component={WebDevelopment} />
+          <Route path="/portfolio/photography" component={Photography} />
         </Switch>
      
     </Body>

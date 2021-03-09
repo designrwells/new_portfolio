@@ -1,21 +1,12 @@
 import React from 'react';
-import Header from '../components/Header';
+import Header from '../../components/Header';
 import { Link, Route, Switch, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { pullLeft, transition, cardUp, cardUpContainer } from '../animations';
-import PortfolioNav from '../components/PortfolioNav';
-import Design from './portfolio/Design';
-import WebDevelopment from './portfolio/WebDevelopment';
-import Photography from './portfolio/Photography';
-
+import { pullLeft, transition, cardUp, cardUpContainer } from '../../animations';
+import PortfolioNav from '../../components/PortfolioNav';
 
 //page styles
-const Section = styled.section`
-	background: #ccc;
-	min-height: 100vh;
-	padding-top: 10%;
-`;
 
 const Row = styled(motion.div)`
 	display: flex;
@@ -33,7 +24,7 @@ const CardInner = styled.div`
 	width: 100%;
 	height: 100%;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	background-color: #FFF;
+	background-color: #aaa;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -53,11 +44,11 @@ const CardFront = styled.div`
   	flex-direction: column;
 `;
 
-const Portfolio = () => {
+const Photography = () => {
 
+  let location = useLocation();
 
-
-	return (
+		return (
 
 		<motion.div 
 			initial='out' 
@@ -67,16 +58,6 @@ const Portfolio = () => {
 			transition={transition}
 			>
 
-
-			<Section>
-			
-				<PortfolioNav />
-
-				<Switch>
-					<Route path="/portfolio/design" component={Design} />
-		            <Route path="/portfolio/web-development" component={WebDevelopment} />
-		            <Route path="/portfolio/photography" component={Photography} />
-				</Switch>
 				<Row exitBeforeEnter
 						key='navItems'
 						initial='hide'
@@ -103,35 +84,9 @@ const Portfolio = () => {
 					</Card>
 
 				</Row>
-				<Row exitBeforeEnter
-						key='navItems'
-						initial='hide'
-						animate='show'
-						variants={cardUpContainer}	>
-					
-					<Card variants={cardUp}>
-						<CardInner>
-							<CardFront>
-							</CardFront>
-						</CardInner>
-					</Card>
-					<Card variants={cardUp}>
-						<CardInner>
-							<CardFront>
-							</CardFront>
-						</CardInner>
-					</Card>
-					<Card variants={cardUp}>
-						<CardInner>
-							<CardFront>
-							</CardFront>
-						</CardInner>
-					</Card>
-
-				</Row> 
-			</Section>	
+			
 		</motion.div>
 
 		)
 }
-export default Portfolio;
+export default Photography;

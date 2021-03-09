@@ -6,21 +6,21 @@ import styled from 'styled-components';
 import '../css/services.css';
 
 const Section = styled.section`
-	background: #555;
+	background: #9D9C9D;
 	min-height: 100vh;
+	padding-top: 10%;
 `;
 
 const Row = styled(motion.div)`
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	padding-top: 12%;
+	justify-content: center;	
 `;
 
 const Card = styled(motion.div)`
-	height: clamp(300px, 400px, 400px);
-	width: clamp(250px, 22vw, 300px);
-	margin: 2rem;
+	height: clamp(400px, 500px, 500px);
+	width: clamp(350px, 22vw, 400px);
+	margin: 1.25rem;
 `;
 
 const CardInner = styled.div`
@@ -29,7 +29,7 @@ const CardInner = styled.div`
 	transition: transform 0.6s;
 	transform-style: preserve-3d;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	background-color: #43a45a;
+	background-color: #D88548;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -51,9 +51,10 @@ const CardFront = styled.div`
 
   	h1 {
   		text-transform: uppercase;
+  		color: #F4F1F4;
   		font-family: 'Biryani', sans-serif;
   		line-height: 1.3;
-		font-size: clamp(1.5rem,1.8vw,2rem);
+		font-size: clamp(1.5rem, 2vw, 2.5rem);
 		margin-bottom: 0.5rem;
 		text-align: center;
 		padding: 20% 0 17% 0;
@@ -61,13 +62,14 @@ const CardFront = styled.div`
 	}
 	i {
 		font-size: clamp(4rem,4vw,6rem);
-		margin: 30px;
+		margin: 15%;
+		color: #F4F1F4;
 	}
 `;
 const CardBack = styled.div`
-	color: #fff;
+	color: #F4F1F4;
+	font-size: clamp(1.1rem, 1.5vw, 21px);
 	border-radius: 10px;
-	background-color: #43a45a;
 	position: absolute;
 	padding: 23px;
   	-webkit-backface-visibility: hidden;
