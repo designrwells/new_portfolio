@@ -17,7 +17,7 @@ const HamburgerMenuContainer = styled.div`
 const MenuContainer = styled(motion.div)`
 	height: 100%;
 	width: 100%;
-	background-color: #1A3B5B;
+	background-color: #151E30;
 	z-index: 90;
 	position: fixed;
 	top: 0;
@@ -30,7 +30,7 @@ const Navbar = styled.nav`
 	z-index: 100;
 	display: flex;
 	justify-content: center;
-	margin: 15vh 0 0 30vw;
+	margin: 13vh 0 0 40vw;
 `;
 const NavItems = styled(motion.div)`
 	display: flex;
@@ -39,19 +39,20 @@ const NavItems = styled(motion.div)`
 `;
 const NavbarLink = styled(Link)`
 	text-decoration: none;
-	font-family: 'Biryani', sans-serif;
-	font-size: clamp(2rem, 4.4vw, 95px);
-	line-height: 1.25;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	font-size: clamp(2rem, 4.6vw, 1000px);
+	line-height: 1.27;
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
-	background: linear-gradient(to right, #D2D03F 32%, #DEF2E9 37%);
+	background: linear-gradient(to right, #26FF6B 32%, #EBF3F8 37%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-size: 380% 100%;
 	background-position: 100%;
-	transition: background-position 850ms ease;
+	transition: background-position 775ms;
   	
   	:hover {
   		background-position: 0 100%;
@@ -63,11 +64,11 @@ const SocialLinks = styled(motion.div)`
 	a {
 		font-size: clamp(1.3rem, 1.8vw, 40px);
 		text-decoration: none;
-		color: rgba(244, 241, 244,0.5);
+		color: rgba(235, 243, 248,0.5);
 		margin: 6rem 3% 0 3%;
 	}
 	a:hover {
-		color: #b5dbff;
+		color: #EBF3F8;
 	}
 `;
 

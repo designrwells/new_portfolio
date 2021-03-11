@@ -8,7 +8,7 @@ import PortfolioGrid from '../components/PortfolioGrid';
 
 //page styles
 const Section = styled.section`
-	background: #ccc;
+	background: linear-gradient(0.07turn, #222B2B 15%, #2C3642);
 	min-height: 100vh;
 	padding-top: 10%;
 `;
