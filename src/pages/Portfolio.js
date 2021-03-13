@@ -8,17 +8,19 @@ import PortfolioGrid from '../components/PortfolioGrid';
 
 //page styles
 const Section = styled.section`
-	background: linear-gradient(0.07turn, #222B2B 15%, #2C3642);
+	background: #242123;
 	min-height: 100vh;
-	padding-top: 10%;
+`;
+const Title = styled.div`
+	padding: 3% 3% 4% 3%;
+	color: #fff;
+	font-size: clamp(15px, 1.1vw, 32px);
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
 `;
 
 const Portfolio = () => {
-
-
-
 	return (
-
 		<motion.div 
 			initial='out' 
 			animate='in' 
@@ -27,11 +29,11 @@ const Portfolio = () => {
 			transition={transition}
 			>
 			<Section>
+				<Title>p o r t f o l i o</Title>
 				<PortfolioGrid />
 
 			</Section>	
 		</motion.div>
-
 		)
 }
 export default Portfolio;

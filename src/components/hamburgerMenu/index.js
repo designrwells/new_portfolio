@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom';
 const HamburgerMenuContainer = styled.div`
 	display: flex;
 	position: absolute;
-	top: 38px;
-	right: 38px;
+	top: 3%;
+	right: 3%;
 `;
 
 //Menu wrapper/backdrop

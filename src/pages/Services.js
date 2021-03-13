@@ -6,9 +6,8 @@ import styled from 'styled-components';
 import '../css/services.css';
 
 const Section = styled.section`
-	background: #9D9C9D;
+	background: #020518;
 	min-height: 100vh;
-	padding-top: 10%;
 `;
 
 const Row = styled(motion.div)`
@@ -18,9 +17,8 @@ const Row = styled(motion.div)`
 `;
 
 const Card = styled(motion.div)`
-	height: clamp(400px, 500px, 500px);
+	height: 100vh;
 	width: clamp(350px, 22vw, 400px);
-	margin: 1.25rem;
 `;
 
 const CardInner = styled.div`
@@ -28,12 +26,10 @@ const CardInner = styled.div`
 	height: 100%;
 	transition: transform 0.6s;
 	transform-style: preserve-3d;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	background-color: #D88548;
+	background: #1077C6;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 	${Card}:hover & {
 		transform: rotateY(180deg);
 	}
@@ -52,26 +48,20 @@ const CardFront = styled.div`
   	h1 {
   		text-transform: uppercase;
   		color: #F4F1F4;
-  		font-family: 'Biryani', sans-serif;
+  		font-family: 'Oswald', sans-serif;
+  		font-weight: 400;
   		line-height: 1.3;
-		font-size: clamp(1.5rem, 2vw, 2.5rem);
+		font-size: clamp(1.5rem, 3.3vw, 4.5rem);
 		margin-bottom: 0.5rem;
 		text-align: center;
 		padding: 20% 0 17% 0;
-  		border-bottom: solid 3px;
-	}
-	i {
-		font-size: clamp(4rem,4vw,6rem);
-		margin: 15%;
-		color: #F4F1F4;
 	}
 `;
 const CardBack = styled.div`
 	color: #F4F1F4;
 	font-size: clamp(1.1rem, 1.5vw, 21px);
-	border-radius: 10px;
 	position: absolute;
-	padding: 23px;
+	padding: 15%;
   	-webkit-backface-visibility: hidden;
   	backface-visibility: hidden;
   	transform: rotateY(180deg);
@@ -96,8 +86,7 @@ const Services = () => {
 					<Card variants={cardUp}>
 						<CardInner>
 							<CardFront>
-								<h1>Graphic Design</h1>
-								<i class="fas fa-pencil-ruler"></i>
+								<h1>Graphic Design</h1>								
 							</CardFront>
 							<CardBack>
 								<p>Artworks, illustrations, outdoor/indoor signage, CD/DVD/book cover & booklets, 
@@ -111,8 +100,7 @@ const Services = () => {
 					<Card variants={cardUp}>
 						<CardInner>
 							<CardFront>
-								<h1>Branding & Identity</h1>
-								<i class="far fa-copyright"></i>
+								<h1>Branding & Identity</h1>								
 							</CardFront>
 							<CardBack>
 								<p>Logos, stationery (business cards, envelopes, letterheads, etc.), 
@@ -128,7 +116,6 @@ const Services = () => {
 						<CardInner>
 							<CardFront>
 								<h1>Web Development</h1>
-								<i class="fas fa-laptop-code"></i>
 							</CardFront>
 							<CardBack>
 								<p>Building custom, up-to-date websites with responsive design and modern appeal 
@@ -143,7 +130,6 @@ const Services = () => {
 						<CardInner>
 							<CardFront>
 								<h1>Photo Services</h1>
-								<i class="fas fa-camera-retro"></i>
 							</CardFront>
 							<CardBack>
 								<p>Photo shoots, live events, business/product photography, and landscapes - for 

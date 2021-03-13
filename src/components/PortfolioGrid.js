@@ -7,12 +7,18 @@ import { Link } from 'react-router-dom';
 //images
 import AiSVG from '../svg/ai.svg';
 import PsSVG from '../svg/ps.svg';
+import LrSVG from '../svg/lr.svg';
 import WooSVG from '../svg/woo.svg';
 import MDS_Thumb from '../img/mds_thumb.png';
 import MM_Thumb from '../img/mm_thumb.jpg';
 import TNT_Thumb from '../img/tnt_thumb.png';
 import DOS_Thumb from '../img/dos_thumb.png';
 import BH_Thumb from '../img/bh_thumb.png';
+import Ace_Thumb from '../img/ace_thumb.png';
+import Utah_Thumb from '../img/utah_thumb.jpg';
+import Plastic_Thumb from '../img/plastic_thumb.jpg';
+import Fontana_Thumb from '../img/fontana_thumb.jpg';
+import PR_Thumb from '../img/pr_thumb.jpg';
 
 //--Grid Navigation------
 const GridNav = styled(motion.div)`
@@ -81,12 +87,23 @@ const Figure = styled.figure`
   overflow: hidden;
   margin: 20px 5px;
   animation: ${show} .8s ease;
+  transition: .2s ease;
+   
+   &:hover {
+      box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.3);
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+      transition: .2s ease;
+    }
 `;
 const Image = styled.img` {
-    width: clamp(300px, 18vw, 390px);
+    width: clamp(330px, 18vw, 390px);
     height: clamp(400px, 550px, 600px);
     left: 0;
     object-fit: cover;
+    margin-bottom: -4px;
+
+   
 `;
 const Title = styled.figcaption`
   font-family: 'Oswald', sans-serif;
@@ -114,27 +131,27 @@ const Description = styled.figcaption`
     height: 20px;
     width: 20px;
     margin-right: 17px;
-    box-shadow: 0 0 0;
   }
 `;
 
 //Project object array
 const imgs = [{alt:"Mended Moments", tag:"WEB DEVELOPMENT", page:"/mendedmoments", src:MM_Thumb, description:<><i class='fab fa-wordpress-simple'></i><i class='fab fa-html5'></i><i class='fab fa-css3-alt'></i><i class='fab fa-php'></i><i class='fab fa-elementor'></i><img src={WooSVG} /><img src={AiSVG} /><img src={PsSVG} /></>},
+              {alt:"TNT AutoMart", tag:"WEB DEVELOPMENT", page:"/TNT-Automart", src:TNT_Thumb, description:<><i class='fab fa-wordpress-simple'></i><i class='fab fa-html5'></i><i class='fab fa-css3-alt'></i><img src={AiSVG} /><img src={PsSVG} /><i class='fas fa-camera'></i></>},
               {alt:"Medical Device Success", tag:"WEB DEVELOPMENT", page:"/medical-device-success", src:MDS_Thumb, description:<><i class='fab fa-wordpress-simple'></i><i class='fab fa-html5'></i><i class='fab fa-css3-alt'></i><i class='fab fa-elementor'></i><img src={AiSVG} /></>},
               {alt:"Discount Office Source", tag:"WEB DEVELOPMENT", page:"/discount-office-source", src:DOS_Thumb, description:<><i class='fab fa-html5'></i><i class='fab fa-css3-alt'></i><i class='fab fa-js'></i><img src={AiSVG} /><img src={PsSVG} /></>},
-              {alt:"TNT AutoMart", tag:"WEB DEVELOPMENT", page:"/TNT-Automart", src:TNT_Thumb, description:<><i class='fab fa-wordpress-simple'></i><i class='fab fa-html5'></i><i class='fab fa-css3-alt'></i><img src={AiSVG} /><img src={PsSVG} /><i class='fas fa-camera'></i></>},
-              {alt:"SRD Vision", description:"Wordpress, Elementor", tag:"WEB DEVELOPMENT", page:"/SRD-Vision", src:"https://www.srdvision.com/wp-content/uploads/2011/08/srdvision-logo.png"},
               {alt:"Brisket House", tag:"DESIGN", page:"/briskethouse", src:BH_Thumb, description:<><img src={AiSVG} /></>},
-              {alt:"The Plastic Truth", description:"Adobe Illustrator", tag:"DESIGN", page:"/the-plastic-truth", src:"http://darrinwells.com/img/thumbnails/plastic_thumb.jpg"},
-              {alt:"The Wild Acreage", description:"Adobe Illustrator", tag:"DESIGN", page:"/wild-acreage", src:""},
-              {alt:"Ace Automotive", description:"Adobe Photoshop, FlexiSign Pro", tag:"DESIGN", page:"/ace-automotive", src:"http://darrinwells.com/img/thumbnails/aceauto_thumb.jpg"},
-              {alt:"Fontana", description:"Adobe Illustrator", tag:"DESIGN", page:"/fontana", src:"http://darrinwells.com/img/thumbnails/fontana_thumb.jpg"},
-              {alt:"Photo Restoration", description:"Adobe Photoshop", tag:"DESIGN", page:"/photo-restoration", src:"http://darrinwells.com/img/thumbnails/fontana_thumb.jpg"},
-              {alt:"A Utah Engagement", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/utah-engagement", src:"http://darrinwells.com/img/thumbnails/scThumb.jpg"},
+              {alt:"The Plastic Truth", tag:"DESIGN", page:"/the-plastic-truth", src:Plastic_Thumb,  description:<><img src={AiSVG} /></>},   
+              {alt:"Ace Automotive", tag:"DESIGN", page:"/ace-automotive", src:Ace_Thumb, description:<><img src={AiSVG} /><img src={PsSVG} /><b>FlexiSign Pro</b></>},
+              {alt:"Fontana", tag:"DESIGN", page:"/fontana", src:Fontana_Thumb, description:<><img src={AiSVG} /></> },
+              {alt:"Photo Restoration", tag:"DESIGN", page:"/photo-restoration", src:PR_Thumb, description:<><img src={PsSVG} /></>},
+              {alt:"Utah Engagement", tag:"PHOTOGRAPHY", page:"/utah-engagement", src:Utah_Thumb, description:<><i class='fas fa-camera'></i><img src={PsSVG} /><img src={LrSVG} /></>},
               {alt:"Landscapes", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/landscapes", src:""},
               {alt:"Night-scapes", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/night-scapes", src:""},
               {alt:"Nature", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/nature", src:"http://darrinwells.com/img/thumbnails/nature_thumb.jpg"},
-              {alt:"Other", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/other", src:""}
+              {alt:"Iceland Landscapes", tag:"PHOTOGRAPHY", page:"/other", src:"", description:<><i class='fas fa-camera'></i><img src={LrSVG} /></>},
+              {alt:"Oklahoma Storms", tag:"PHOTOGRAPHY", page:"/other", src:"", description:<><i class='fas fa-camera'></i><img src={LrSVG} /></>},
+              {alt:"The Wild Acreage", description:"Adobe Illustrator", tag:"DESIGN", page:"/wild-acreage", src:""},
+              {alt:"SRD Vision", description:"Wordpress, Elementor", tag:"WEB DEVELOPMENT", page:"/SRD-Vision", src:"https://www.srdvision.com/wp-content/uploads/2011/08/srdvision-logo.png"}
 ];
 
 //Project category object array
