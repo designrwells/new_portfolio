@@ -2,14 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { pullUp, transition } from '../animations';
+import ContactForm from '../components/ContactForm';
 
 //page styles
 const Section = styled.section`
 	background: #999;
 	height: 100vh;
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-end;
 `;
 const Title = styled.div`
 	padding: 3% 3% 4% 3%;
@@ -32,6 +30,7 @@ const Contact = () => {
 		
 			<Section>
 				<Title>c o n t a c t</Title>
+				<ContactForm />
 			</Section>	
 		</motion.div>
 
