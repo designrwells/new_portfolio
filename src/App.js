@@ -1,7 +1,5 @@
 import './App.css';
 import { Route, Switch, useLocation } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import { AnimatePresence } from 'framer-motion';
 import styled from 'styled-components';
 import HamburgerMenu from './components/hamburgerMenu';
 import GlobalStyle from './globalStyles';
@@ -32,7 +30,7 @@ function App()  {
           <Route path='/services' component={Services} />
           <Route path='/portfolio' component={Portfolio} />
           <Route path='/contact' component={Contact} />
-          <Route path='/portfolio/mendedmoments' component={MendedMoments} />
+          <Route path='/mendedmoments' component={MendedMoments} />
         </Switch>
      
     </Body>

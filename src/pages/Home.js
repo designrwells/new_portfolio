@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
 import { motion } from 'framer-motion';
 import { fade, transition } from '../animations';
 import styled from 'styled-components';

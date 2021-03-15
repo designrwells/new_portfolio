@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { pullRight, transition } from '../animations';
@@ -8,12 +7,14 @@ import { pullRight, transition } from '../animations';
 const Section = styled.section`
 	background: #f34c12;
 	height: 100vh;
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-end;
 `;
-
-
+const Title = styled.div`
+	padding: 3% 3% 4% 3%;
+	color: #fff;
+	font-size: clamp(15px, 1.1vw, 32px);
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+`;
 
 const About = () => {
 	return (
@@ -27,7 +28,7 @@ const About = () => {
 			>
 		
 			<Section>
-	
+				<Title>a b o u t</Title>
 			</Section>	
 		</motion.div>
 

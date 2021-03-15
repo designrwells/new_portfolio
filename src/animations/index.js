@@ -103,7 +103,7 @@ export const transition = {
 	duration: 0.4
 };
 
-export const cardUpContainer = {
+export const rowSlideContainer = {
 	show: {
 		transition: {
 			type: 'tween',
@@ -119,10 +119,10 @@ export const cardUpContainer = {
 		},
 	},
 }
-export const cardUp = {
+export const rowRight = {
 	show: {
 		opacity: 1,
-		y: 0,
+		x: 0,
 		transition: {
 			type: 'tween',
 			duration: 1,
@@ -131,7 +131,7 @@ export const cardUp = {
 	},
 	hide: {
 		opacity: 0,
-		y: '-40vh',
+		x: '-40vw',
 		transition: {
 			type: 'tween',
 			duration: 0.12,

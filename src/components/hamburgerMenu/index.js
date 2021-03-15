@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import MenuToggle from './menuToggle';
 import { menuTransition, menuVariants, navItemVariants } from '../../animations';
 import { Link } from 'react-router-dom';

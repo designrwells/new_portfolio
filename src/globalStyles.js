@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		font-family: Open-'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-family: Open-'Trebuchet MS', 'Oswald', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	}
 `;
 

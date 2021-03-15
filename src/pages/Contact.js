@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { pullUp, transition } from '../animations';
@@ -12,8 +11,13 @@ const Section = styled.section`
 	justify-content: flex-start;
 	align-items: flex-end;
 `;
-
-
+const Title = styled.div`
+	padding: 3% 3% 4% 3%;
+	color: #fff;
+	font-size: clamp(15px, 1.1vw, 32px);
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+`;
 
 const Contact = () => {
 	return (
@@ -27,7 +31,7 @@ const Contact = () => {
 			>
 		
 			<Section>
-	
+				<Title>c o n t a c t</Title>
 			</Section>	
 		</motion.div>
 

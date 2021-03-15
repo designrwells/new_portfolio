@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { pullLeft, transition, cardUp, cardUpContainer } from '../animations';
+import { pullLeft, transition } from '../animations';
 import PortfolioGrid from '../components/PortfolioGrid';
 
 
