@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { motion } from 'framer-motion';
 import { transition, rowRight } from '../animations';
 import styled, { keyframes } from 'styled-components';
@@ -204,7 +204,7 @@ const Cards = ({imgs}) =>
       </div>)}
   </CardsContainer>
 
-class PortfolioGrid extends React.Component{
+class PortfolioGrid extends Component {
   state ={
     imgs, 
     filters,
