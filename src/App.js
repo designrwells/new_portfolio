@@ -10,6 +10,8 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import MendedMoments from './pages/portfolio/MendedMoments';
 import TNTAutoMart from './pages/portfolio/TNTAutoMart';
+import MDS from './pages/portfolio/MDS';
+import DOS from './pages/portfolio/DOS';
 
 
 const Body = styled.section`
@@ -33,6 +35,8 @@ function App()  {
           <Route path='/contact' component={Contact} />
           <Route path='/mended-moments' component={MendedMoments} />
           <Route path='/tnt-automart' component={TNTAutoMart} />
+          <Route path='/medical-device-success' component={MDS} />
+          <Route path='/discount-office-source' component={DOS} />
         </Switch>
      
     </Body>

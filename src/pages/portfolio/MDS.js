@@ -3,27 +3,23 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { pullUp, transition } from '../../animations';
 import { Link } from 'react-router-dom';
-import '../../css/projects.scss';
 
 //images
-import MM_Logo from '../../svg/mm_logo.svg';
-import MM_Background from '../../img/mended-moments/mm_background.jpg';
-import MM_Img1 from '../../img/mended-moments/mm_img1.jpg';
-import MM_Img2 from '../../img/mended-moments/mm_img2.jpg';
-import MM_Img3 from '../../img/mended-moments/mm_img3.jpg';
-
+import MDS_Logo from '../../svg/mds_logo.svg';
+import MDS_Img1 from '../../img/mds/mds_img1.jpg';
+import MDS_Img2 from '../../img/mds/mds_img2.jpg';
 
 //page styles
 const Section = styled.section`
-	background-image: url(${MM_Background});
+	background: #000;
 	width: 100vw;
-	height: 110vh;
+	height: 100vh;
 `;
 const Logo = styled.img`
-	width: clamp(100px, 35vw, 270px);	
+	width: clamp(250px, 15vw, 600px);
 `;
 
-const MendedMoments = () => {
+const TNTAutoMart = () => {
 
 	return (
 
@@ -37,9 +33,9 @@ const MendedMoments = () => {
 			<Section>
 				<div className='back-wrapper'><Link className='back-link' to='/portfolio'><i className='fas fa-arrow-left' ></i>BACK</Link></div>	
 				<div className='intro-content'>
-					<div>MENDED MOMENTS PHOTO RESTORATION</div>
-					<h1>WEBSITE & DESIGN FOR<br />MENDED MOMENTS</h1>
-					<Logo src={MM_Logo} alt='Mended Moments Logo' />
+					<div>MEDICAL DEVICE SUCCESS</div>
+					<h1> MDS LOGO & WEB DESIGN</h1>
+					<Logo src={MDS_Logo} alt='Mended Moments Logo' />
 				</div>
 			</Section>	
 			<section className='section-two'>
@@ -58,14 +54,14 @@ const MendedMoments = () => {
 			</section>	
 			<section className='section-two'>
 					<div className='img-column'>
-						<img src={MM_Img1} alt='Mended Moments Website Front Page' />
+						<img src={MDS_Img1} alt='Medical Device Success Website Front Page' />
 					</div>
-					<div className='img-column'>
-						<img src={MM_Img2} alt='Mended Moments Brochure1' />
-						<img src={MM_Img3} alt='Mended Moments Brochure2' />
+					<div className='img-column'>					
+						<img src={MDS_Img2} alt='Medical Device Success Logo' />
 					</div>	
 			</section>
 		</motion.div>
+
 		)
 }
-export default MendedMoments;
+export default TNTAutoMart;
