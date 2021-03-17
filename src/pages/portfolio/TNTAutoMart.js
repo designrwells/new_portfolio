@@ -17,6 +17,30 @@ const Section1 = styled.section`
 	width: 100vw;
 	height: 100vh;
 `;
+const Back = styled(motion.div)`
+	display: flex;
+	justify-content: center;
+	padding: 1% 80% 5% 0;
+`;
+const BackLink = styled(Link)`
+	font-family: 'Oswald', sans-serif;
+	font-size: clamp(25px, 2vw, 80px);
+	text-decoration: none;
+	transition: 0.15s;
+	color: #fff;
+
+	&:hover {
+		font-size: clamp(30px, 2.2vw, 85px);
+		color: #000;
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+    	transition: 0.15s;
+	}
+	i {
+		margin-right: 20px;
+	}
+`;
+
 const IntroContent = styled(motion.div)`
 	display: flex;
 	align-items: center;
@@ -55,30 +79,6 @@ const Section2 = styled.section`
 	flex-wrap: wrap;
 	padding: 5%;
 `;
-const Back = styled(motion.div)`
-	display: flex;
-	justify-content: center;
-	padding: 1% 80% 5% 0;
-
-`;
-const BackLink = styled(Link)`
-	font-family: 'Oswald', sans-serif;
-	font-size: clamp(25px, 2vw, 80px);
-	text-decoration: none;
-	transition: 0.15s;
-	color: #fff;
-
-	&:hover {
-		font-size: clamp(30px, 2.2vw, 85px);
-		color: #000;
-		-webkit-transform: translateY(-6px);
-		transform: translateY(-6px);
-    	transition: 0.15s;
-	}
-	i {
-		margin-right: 20px;
-	}
-`;
 const Column = styled(motion.div)`	
 	width: 500px;
 	display: flex;
@@ -114,7 +114,7 @@ const TNTAutoMart = () => {
 			transition={transition}
 		>
 			<Section1>
-				<Back><BackLink to='/portfolio'><i class='fas fa-arrow-left' ></i>BACK</BackLink></Back>	
+				<Back><BackLink to='/portfolio'><i className='fas fa-arrow-left' ></i>BACK</BackLink></Back>	
 				<IntroContent>
 					<div>TNT AUTOMART</div>
 					<h1>LOGO & WEB DESIGN<br />FOR TNT AUTOMART</h1>
