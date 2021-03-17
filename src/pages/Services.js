@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { pullDown, transition, rowRight, rowSlideContainer } from '../animations';
 import styled from 'styled-components';
-import '../css/services.css';
 
 const Section = styled.section`
 	background: #020518;

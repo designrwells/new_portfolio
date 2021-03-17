@@ -1,5 +1,57 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
+
+const Form = styled.form`
+	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+  	width: 55vw;
+  	text-align: center;
+
+  	h1 {
+		color: #fff;
+  		font-family: 'Oswald', sans-serif;
+  		font-weight: 600;
+  		font-size: clamp(30px, 7vw, 100px);
+  		margin-bottom: 3%;
+	}
+	div {
+		display: flex;
+		align-items: center;
+		margin: 3% 0;
+	}
+  	label {
+  		color: #fff;
+  		font-family: 'Oswald', sans-serif;
+  		font-weight: 400;
+  		font-size: clamp(20px, 2vw, 40px);
+  		margin-right: 5%;
+  	}
+  	input, textarea {
+  		background-color: transparent;
+	    border-radius: 0;
+	    border: 2px solid #fff;
+	    color: #fff;
+	    font-size: clamp(20px, 2vw, 40px);
+	    height: 100%;
+	    width: 100%;
+  	}
+  	textarea {
+  		height: 20vh;
+	    width: 100%;
+  	}
+  	button {
+  		font-family: 'Oswald', sans-serif;
+  		font-weight: 600;
+  		font-size: 25px;
+  		color: #444;
+  		height: 60px;
+  		text-transform: uppercase;
+	    padding: 10px 60px;
+	    background: #fff;
+  	}
+`;
 
 class ContactFrom extends Component {
 	constructor() {
@@ -43,23 +95,24 @@ class ContactFrom extends Component {
 	render () {
 		let buttonText = this.state.status;
 		return (
-			<form onSubmit={this.handleSubmit.bind(this)} method='POST'>
+			<Form onSubmit={this.handleSubmit.bind(this)} method='POST'>
+				<h1>GIVE ME A SHOUT!</h1>
 				<div>
-				<label htmlFor='name'>Name:</label>
+				<label htmlFor='name'>NAME:</label>
 				<input type='text' id='name' value={this.state.name} onChange={this.handleChange.bind(this)} required />
 				</div>
 
 				<div>
-				<label htmlFor='email'>Email:</label>
+				<label htmlFor='email'>EMAIL:</label>
 				<input type='text' id='email' value={this.state.email} onChange={this.handleChange.bind(this)} required />
 				</div>
 
 				<div>
-				<label htmlFor='message'>Message:</label>
+				<label htmlFor='message'>MESSAGE:</label>
 				<textarea id='message' value={this.state.message} onChange={this.handleChange.bind(this)} required />
 				</div>
 				<button type='submit'>{buttonText}</button>
-			</form>
+			</Form>
 		)
 	}
 }

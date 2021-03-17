@@ -9,6 +9,11 @@ const Section = styled.section`
 	background: #999;
 	height: 100vh;
 `;
+
+const FormWrapper = styled.div `
+	display: flex;
+	justify-content: center;
+`;
 const Title = styled.div`
 	padding: 3% 3% 4% 3%;
 	color: #fff;
@@ -30,7 +35,9 @@ const Contact = () => {
 		
 			<Section>
 				<Title>c o n t a c t</Title>
-				<ContactForm />
+				<FormWrapper>
+					<ContactForm />
+				</FormWrapper>
 			</Section>	
 		</motion.div>
 

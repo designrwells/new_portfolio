@@ -5,45 +5,17 @@ import { pullUp, transition } from '../../animations';
 import { Link } from 'react-router-dom';
 
 //images
-import MM_Logo from '../../svg/mm_logo.svg';
-import MM_Background from '../../img/mended-moments/mm_background.jpg';
-import MM_Img1 from '../../img/mended-moments/mm_img1.jpg';
-import MM_Img2 from '../../img/mended-moments/mm_img2.jpg';
-import MM_Img3 from '../../img/mended-moments/mm_img3.jpg';
+import TNT_Logo from '../../svg/tnt_logo.svg';
+import TNT_Img1 from '../../img/tnt-automart/tnt_img1.jpg';
+//import TNT_Img2 from '../../img/tnt-automart/tnt_img2.jpg';
+//import TNT_Img3 from '../../img/tnt-automart/tnt_img3.jpg';
 
 
 //page styles
 const Section1 = styled.section`
-	background-image: url(${MM_Background});
+	background: #B83835;
 	width: 100vw;
 	height: 100vh;
-`;
-const Back = styled(motion.div)`
-	display: flex;
-	justify-content: center;
-	padding: 1% 80% 5% 0;
-`;
-const BackLink = styled(Link)`
-	font-family: 'Oswald', sans-serif;
-	font-size: clamp(25px, 2vw, 80px);
-	text-decoration: none;
-	transition: 0.15s;
-	color: #fff;
-	overflow: hidden;
-	background: linear-gradient(to right, #26FF6B 32%, #fff 37%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-size: 380% 100%;
-	background-position: 100%;
-	transition: background-position 420ms;
-
-	&:hover {
-		background-position: 0 100%;
-	}
-	i {
-		margin-right: 20px;
-	}
 `;
 const IntroContent = styled(motion.div)`
 	display: flex;
@@ -71,7 +43,7 @@ const IntroContent = styled(motion.div)`
 		line-height: 120%;
 	}
 	img {
-		width: clamp(20vh, 14vw, 350px);
+		width: clamp(2vh, 50vw, 560px);
 	}
 `;
 const Section2 = styled.section`
@@ -82,6 +54,30 @@ const Section2 = styled.section`
 	justify-content: center;
 	flex-wrap: wrap;
 	padding: 5%;
+`;
+const Back = styled(motion.div)`
+	display: flex;
+	justify-content: center;
+	padding: 1% 80% 5% 0;
+
+`;
+const BackLink = styled(Link)`
+	font-family: 'Oswald', sans-serif;
+	font-size: clamp(25px, 2vw, 80px);
+	text-decoration: none;
+	transition: 0.15s;
+	color: #fff;
+
+	&:hover {
+		font-size: clamp(30px, 2.2vw, 85px);
+		color: #000;
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+    	transition: 0.15s;
+	}
+	i {
+		margin-right: 20px;
+	}
 `;
 const Column = styled(motion.div)`	
 	width: 500px;
@@ -106,9 +102,7 @@ const ImgColumn = styled(motion.div)`
 		margin: 2%;
 	}
 `;
-const MendedMoments = () => {
-
-
+const TNTAutoMart = () => {
 
 	return (
 
@@ -122,9 +116,9 @@ const MendedMoments = () => {
 			<Section1>
 				<Back><BackLink to='/portfolio'><i class='fas fa-arrow-left' ></i>BACK</BackLink></Back>	
 				<IntroContent>
-					<div>MENDED MOMENTS PHOTO RESTORATION</div>
-					<h1>MENDED MOMENTS<br />WEBSITE & PRINT DESIGN</h1>
-					<img src={MM_Logo} alt='Mended Moments Logo' />
+					<div>TNT AUTOMART</div>
+					<h1>LOGO & WEB DESIGN<br />FOR TNT AUTOMART</h1>
+					<img src={TNT_Logo} alt='Mended Moments Logo' />
 				</IntroContent>
 			</Section1>	
 			<Section2>
@@ -143,15 +137,15 @@ const MendedMoments = () => {
 			</Section2>	
 			<Section2>
 					<ImgColumn>
-						<img src={MM_Img1} alt='Mended Moments Website Front Page' />
+						<img src={TNT_Img1} alt='Mended Moments Website Front Page' />
 					</ImgColumn>
 					<ImgColumn>
-						<img src={MM_Img2} alt='Mended Moments Brochure1' />
-						<img src={MM_Img3} alt='Mended Moments Brochure2' />
+						<img src='' alt='Mended Moments Website Front Page' />
+						<img src='' alt='Mended Moments Website Front Page' />
 					</ImgColumn>	
 			</Section2>
 		</motion.div>
 
 		)
 }
-export default MendedMoments;
+export default TNTAutoMart;

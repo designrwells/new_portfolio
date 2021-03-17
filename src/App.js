@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import MendedMoments from './pages/portfolio/MendedMoments';
+import TNTAutoMart from './pages/portfolio/TNTAutoMart';
 
 
 const Body = styled.section`
@@ -30,7 +31,8 @@ function App()  {
           <Route path='/services' component={Services} />
           <Route path='/portfolio' component={Portfolio} />
           <Route path='/contact' component={Contact} />
-          <Route path='/mendedmoments' component={MendedMoments} />
+          <Route path='/mended-moments' component={MendedMoments} />
+          <Route path='/tnt-automart' component={TNTAutoMart} />
         </Switch>
      
     </Body>
