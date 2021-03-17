@@ -54,7 +54,7 @@ const NavbarLink = styled(Link)`
 	background-position: 100%;
 	transition: background-position 775ms;
   	
-  	:hover {
+  	&:hover {
   		background-position: 0 100%;
 	}
 `;

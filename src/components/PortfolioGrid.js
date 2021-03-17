@@ -19,6 +19,8 @@ import Utah_Thumb from '../img/utah_thumb.jpg';
 import Plastic_Thumb from '../img/plastic_thumb.jpg';
 import Fontana_Thumb from '../img/fontana_thumb.jpg';
 import PR_Thumb from '../img/pr_thumb.jpg';
+import Iceland_Thumb from '../img/iceland_thumb.jpg';
+import Night_Thumb from '../img/night_thumb.jpg'; 
 
 //--Grid Navigation------
 const GridNav = styled(motion.div)`
@@ -135,8 +137,8 @@ const Description = styled.figcaption`
 `;
 
 //Project object array
-const imgs = [{alt:"Mended Moments", tag:"WEB DEVELOPMENT", page:"/mendedmoments", src:MM_Thumb, description:<><i class='fab fa-wordpress-simple'></i><i class='fab fa-html5'></i><i class='fab fa-css3-alt'></i><i class='fab fa-php'></i><i class='fab fa-elementor'></i><img src={WooSVG} alt='' /><img src={AiSVG} alt='' /><img src={PsSVG} alt='' /></>},
-              {alt:"TNT AutoMart", tag:"WEB DEVELOPMENT", page:"/TNT-Automart", src:TNT_Thumb, description:<><i class='fab fa-wordpress-simple'></i><i class='fab fa-html5'></i><i class='fab fa-css3-alt'></i><img src={AiSVG} alt='' /><img src={PsSVG} alt='' /><i class='fas fa-camera'></i></>},
+const imgs = [{alt:"Mended Moments", tag:"WEB DEVELOPMENT", page:"/mended-moments", src:MM_Thumb, description:<><i class='fab fa-wordpress-simple'></i><i class='fab fa-html5'></i><i class='fab fa-css3-alt'></i><i class='fab fa-php'></i><i class='fab fa-elementor'></i><img src={WooSVG} alt='' /><img src={AiSVG} alt='' /><img src={PsSVG} alt='' /></>},
+              {alt:"TNT AutoMart", tag:"WEB DEVELOPMENT", page:"/tnt-automart", src:TNT_Thumb, description:<><i class='fab fa-wordpress-simple'></i><i class='fab fa-html5'></i><i class='fab fa-css3-alt'></i><img src={AiSVG} alt='' /><img src={PsSVG} alt='' /><i class='fas fa-camera'></i></>},
               {alt:"Medical Device Success", tag:"WEB DEVELOPMENT", page:"/medical-device-success", src:MDS_Thumb, description:<><i class='fab fa-wordpress-simple'></i><i class='fab fa-html5'></i><i class='fab fa-css3-alt'></i><i class='fab fa-elementor'></i><img src={AiSVG} alt='' /></>},
               {alt:"Discount Office Source", tag:"WEB DEVELOPMENT", page:"/discount-office-source", src:DOS_Thumb, description:<><i class='fab fa-html5'></i><i class='fab fa-css3-alt'></i><i class='fab fa-js'></i><img src={AiSVG} alt='' /><img src={PsSVG} alt='' /></>},
               {alt:"Brisket House", tag:"DESIGN", page:"/briskethouse", src:BH_Thumb, description:<><img src={AiSVG} alt='' /></>},
@@ -145,13 +147,13 @@ const imgs = [{alt:"Mended Moments", tag:"WEB DEVELOPMENT", page:"/mendedmoments
               {alt:"Fontana", tag:"DESIGN", page:"/fontana", src:Fontana_Thumb, description:<><img src={AiSVG} alt='' /></> },
               {alt:"Photo Restoration", tag:"DESIGN", page:"/photo-restoration", src:PR_Thumb, description:<><img src={PsSVG} alt='' /></>},
               {alt:"Utah Engagement", tag:"PHOTOGRAPHY", page:"/utah-engagement", src:Utah_Thumb, description:<><i class='fas fa-camera'></i><img src={PsSVG} alt='' /><img src={LrSVG} alt='' /></>},
-              {alt:"Landscapes", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/landscapes", src:""},
-              {alt:"Night-scapes", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/night-scapes", src:""},
-              {alt:"Nature", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/nature", src:"http://darrinwells.com/img/thumbnails/nature_thumb.jpg"},
-              {alt:"Iceland Landscapes", tag:"PHOTOGRAPHY", page:"/other", src:"", description:<><i class='fas fa-camera'></i><img src={LrSVG} alt='' /></>},
-              {alt:"Oklahoma Storms", tag:"PHOTOGRAPHY", page:"/other", src:"", description:<><i class='fas fa-camera'></i><img src={LrSVG} alt='' /></>},
-              {alt:"The Wild Acreage", description:"Adobe Illustrator", tag:"DESIGN", page:"/wild-acreage", src:""},
-              {alt:"SRD Vision", description:"Wordpress, Elementor", tag:"WEB DEVELOPMENT", page:"/SRD-Vision", src:"https://www.srdvision.com/wp-content/uploads/2011/08/srdvision-logo.png"}
+              //{alt:"Landscapes", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/landscapes", src:""},
+              {alt:"Night Photography", tag:"PHOTOGRAPHY", page:"/night-scapes", src:Night_Thumb, description:<><i class='fas fa-camera'></i><img src={LrSVG} alt='' /></>},
+              //{alt:"Nature", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/nature", src:"http://darrinwells.com/img/thumbnails/nature_thumb.jpg"},
+              {alt:"Iceland Landscapes", tag:"PHOTOGRAPHY", page:"/icland-landscapes", src:Iceland_Thumb, description:<><i class='fas fa-camera'></i><img src={LrSVG} alt='' /></>},
+              //{alt:"Oklahoma Storms", tag:"PHOTOGRAPHY", page:"/other", src:"", description:<><i class='fas fa-camera'></i><img src={LrSVG} alt='' /></>},
+              //{alt:"The Wild Acreage", description:"Adobe Illustrator", tag:"DESIGN", page:"/wild-acreage", src:""},
+              //{alt:"SRD Vision", description:"Wordpress, Elementor", tag:"WEB DEVELOPMENT", page:"/SRD-Vision", src:"https://www.srdvision.com/wp-content/uploads/2011/08/srdvision-logo.png"}
 ];
 
 //Project category object array
