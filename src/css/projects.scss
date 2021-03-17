@@ -25,13 +25,13 @@
 		margin-right: 20px;
 	}
 }
-	
+
 .intro-content {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	margin-top: 5vh;
+	margin-top: calc(15vh - 6vw);
 
 	div {
 		color: #FFF;
@@ -39,7 +39,7 @@
 		font-weight: 400;
 		font-size: clamp(1rem, 1.2vw, 50px);
 		text-align: center;
-		margin-bottom: 10px;
+		margin-bottom: 2vh;
 
 	}
 	h1 {
@@ -50,9 +50,6 @@
 		margin-bottom: 14vh;
 		text-align: center;
 		line-height: 120%;
-	}
-	img {
-		width: clamp(20vh, 14vw, 350px);
 	}
 }
 .section-two {
