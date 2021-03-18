@@ -41,7 +41,7 @@ const NavbarLink = styled(Link)`
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 600;
-	font-size: clamp(2rem, 4.6vw, 1000px);
+	font-size: clamp(2rem, 4.6vw, 120px);
 	line-height: 1.27;
 	cursor: pointer;
 	position: relative;
