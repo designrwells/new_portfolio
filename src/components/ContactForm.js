@@ -10,46 +10,62 @@ const Form = styled.form`
   	text-align: center;
 
   	h1 {
-		color: #fff;
+		color: #151E30;
   		font-family: 'Oswald', sans-serif;
   		font-weight: 600;
   		font-size: clamp(30px, 7vw, 100px);
-  		margin-bottom: 3%;
+  		margin-bottom: 2.5%;
 	}
 	div {
 		display: flex;
 		align-items: center;
-		margin: 3% 0;
+		margin: 2.2% 0;
 	}
   	label {
-  		color: #fff;
+  		color: #151E30;
   		font-family: 'Oswald', sans-serif;
   		font-weight: 400;
   		font-size: clamp(20px, 2vw, 40px);
-  		margin-right: 5%;
+  		margin-right: 4%;
   	}
+    input {
+      height: 110%;
+    }
   	input, textarea {
   		background-color: transparent;
 	    border-radius: 0;
-	    border: 2px solid #fff;
-	    color: #fff;
+	    border: 2px solid #151E30;
+	    color: #151E30;
 	    font-size: clamp(20px, 2vw, 40px);
-	    height: 100%;
 	    width: 100%;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
   	}
   	textarea {
-  		height: 20vh;
+  		height: 22vh;
 	    width: 100%;
   	}
   	button {
   		font-family: 'Oswald', sans-serif;
   		font-weight: 600;
   		font-size: 25px;
-  		color: #444;
+  		color: #EBF3F8;
+      border: none;
   		height: 60px;
-  		text-transform: uppercase;
 	    padding: 10px 60px;
-	    background: #fff;
+      margin-top: 2%;
+	    background: linear-gradient(to bottom, #26FF6B 32%, #151E30 37%);
+      background-size: 100% 380%;
+      background-position: 50% 100%;
+      transition: background-position 140ms;
+      cursor: pointer;
+    
+    &:hover {
+      background-position: 50% 0%;
+      color: #151E30;
+  }
   	}
 `;
 
@@ -60,34 +76,34 @@ class ContactFrom extends Component {
 			name: '',
 			email: '',
 			message: '',
-			status: 'Submit'
+			status: 'SUBMIT'
 		};
 	}
 
 	handleChange(event) {
     const field = event.target.id;
-    if (field === "name") {
+    if (field === 'name') {
       this.setState({ name: event.target.value });
-    } else if (field === "email") {
+    } else if (field === 'email') {
       this.setState({ email: event.target.value });
-    } else if (field === "message") {
+    } else if (field === 'message') {
       this.setState({ message: event.target.value });
     }
   }
 
    handleSubmit(event) {
     event.preventDefault();  
-    this.setState({ status: "Sending" });  
+    this.setState({ status: 'SENDING' });  
     axios({
-      method: "POST",
-      url: "http://localhost:5000/contact",
+      method: 'POST',
+      url: 'http://localhost:5000/contact',
       data: this.state,
     }).then((response) => {
-      if (response.data.status === "sent") {
-        alert("Message Sent");
-        this.setState({ name: "", email: "", message: "", status: "Submit" });
-      } else if (response.data.status === "failed") {
-        alert("Message Failed");
+      if (response.data.status === 'sent') {
+        alert('Message Sent');
+        this.setState({ name: '', email: '', message: '', status: 'SUBMIT' });
+      } else if (response.data.status === 'failed') {
+        alert('Message Failed');
       }
     });
   }

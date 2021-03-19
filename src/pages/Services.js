@@ -2,13 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { pullDown, transition, rowRight, rowSlideContainer } from '../animations';
 import styled from 'styled-components';
+import Header_img from '../img/services_head.jpg';
 
 const Section = styled.section`
 	background: #020518;
-	min-height: 100vh;
+	
+	
 `;
-const BackgroundImage = styled.div`
-	height: 30vh;
+const Heading = styled.div`
+	height: 70vh;
+	background-image: url(${Header_img});
+	background-size: cover;
+	background-position: 50% 20%;
 `;
 const Title = styled.div`
 	padding: 3% 3% 4% 3%;
@@ -26,50 +31,65 @@ const Row = styled(motion.div)`
 const RowInner1 = styled(motion.div)`
 	display: flex;
 	color: #fff;
-	padding: 15vh 2%;
+	padding: 11vh 2%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	background: #002220;
 
   	h1 {
+  		display: flex;
+  		justify-content: center;
+  		width: 200px;
   		text-transform: uppercase;
   		color: #F4F1F4;
   		font-family: 'Oswald', sans-serif;
   		font-weight: 400;
-		font-size: clamp(1.8rem, 3vw, 4.5rem);
-		margin-left: 5%;
+		font-size: clamp(1.8rem, 4vw, 4.5rem);
+		margin: 2% 5%;
 		text-align: right;
 	}
 	p {
+		width: 70%;
 		color: #F4F1F4;
-		font-size: clamp(1rem, 1.5vw, 21px);
-		padding: 2% 10%;
+		font-size: clamp(1rem, 1.6vw, 25px);
+		padding: 2% 6%;
 	}
 `;
 
 const RowInner2 = styled(motion.div)`
 
 	display: flex;
-	color: #fff;
-	padding: 15vh 2%;
+	padding: 11vh 2%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+	@media (max-width: 768px) {
+			flex-direction: column-reverse;
+		}
 
   	h1 {
+  		display: flex;
+  		justify-content: center;
+  		flex-direction: row;
+  		width: 200px;
   		text-transform: uppercase;
   		color: #F4F1F4;
   		font-family: 'Oswald', sans-serif;
   		font-weight: 400;
-		font-size: clamp(1.8rem, 3vw, 4.5rem);
-		margin-right: 5%;
+		font-size: clamp(1.8rem, 4vw, 4.5rem);
+		margin: 2% 5%;
+
+		
 	}
 	p {
+		width: 70%;
 		color: #F4F1F4;
+		font-size: clamp(1rem, 1.6vw, 25px);
+		padding: 2% 6%;
 		text-align: right;
-		font-size: clamp(1rem, 1.5vw, 21px);
-		padding: 2% 10%;
 	}
 `;
 
@@ -83,9 +103,9 @@ const Services = () => {
 			transition={transition}
 			>
 			<Section>
-				<BackgroundImage>
+				<Heading>
 					<Title>s e r v i c e s</Title>
-				</BackgroundImage>
+				</Heading>
 				<Row exitBeforeEnter
 						key='navItems'
 						initial='hide'
