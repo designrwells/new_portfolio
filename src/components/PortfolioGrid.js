@@ -30,10 +30,8 @@ const GridNav = styled(motion.div)`
 
   ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     list-style: none;
     padding: 0 15vw;
   }
@@ -261,7 +259,7 @@ class PortfolioGrid extends Component {
     
     imgs.forEach((img, imgKey) => { 
       filters.forEach((filter, filterKey)=> {  
-        if((img.tag===filter.name)&&(filter.statu===true)){
+        if((img.tag===filter.name)&&(filter.status===true)){
           newImgs[a] = img;
           a++;
         }

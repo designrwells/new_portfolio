@@ -6,7 +6,7 @@ import ContactForm from '../components/ContactForm';
 
 //page styles
 const Section = styled.section`
-	background: #999;
+	background: #D1E2EB;
 	height: 100vh;
 `;
 
@@ -16,7 +16,7 @@ const FormWrapper = styled.div `
 `;
 const Title = styled.div`
 	padding: 3% 3% 4% 3%;
-	color: #fff;
+	color: #151E30;
 	font-size: clamp(15px, 1.1vw, 32px);
 	font-weight: 400;
 	font-family: 'Oswald', sans-serif;
