@@ -3,6 +3,8 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import HamburgerMenu from './components/hamburgerMenu';
 import GlobalStyle from './globalStyles';
+
+//pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -12,6 +14,7 @@ import MendedMoments from './pages/portfolio/MendedMoments';
 import TNTAutoMart from './pages/portfolio/TNTAutoMart';
 import MDS from './pages/portfolio/MDS';
 import DOS from './pages/portfolio/DOS';
+import Utah from './pages/portfolio/Utah';
 
 
 const Body = styled.section`
@@ -20,7 +23,7 @@ const Body = styled.section`
   background: #222;
 `;
 
-function App()  {
+const App = () => {
   let location = useLocation();
   return ( 
 
@@ -37,8 +40,8 @@ function App()  {
           <Route path='/tnt-automart' component={TNTAutoMart} />
           <Route path='/medical-device-success' component={MDS} />
           <Route path='/discount-office-source' component={DOS} />
+          <Route path='/utah-engagement' component={Utah} />
         </Switch>
-     
     </Body>
   );
 }
