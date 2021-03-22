@@ -1,9 +1,10 @@
 .back-wrapper {
 	display: flex;
 	justify-content: center;
-	padding: 1% 80% 5% 0;
+	padding: 1% 70% 5% 0;
 } 
 .back-link {
+	z-index: 40;
 	font-family: 'Oswald', sans-serif;
 	font-size: clamp(25px, 2vw, 80px);
 	text-decoration: none;
@@ -34,6 +35,7 @@
 	margin-top: calc(15vh - 6vw);
 
 	div {
+		z-index: 39;
 		color: #FFF;
 		font-family: 'Oswald', sans-serif;
 		font-weight: 400;
@@ -43,6 +45,7 @@
 
 	}
 	h1 {
+		z-index: 39;
 		color: #FFF;
 		font-family: 'Oswald', sans-serif;
 		font-weight: 400;
@@ -61,6 +64,7 @@
 	flex-wrap: wrap;
 	padding: 5%;
 }
+
 .column {
 	width: 500px;
 	display: flex;
@@ -77,12 +81,19 @@
 	}
 }
 
+.wide-photo {
+	width: 510px;
+}
+
 .img-column {
 	display: flex;
 	flex-direction: column;
+	margin: 0 0.5%;
 
 	img {
-		margin: 2%;
+		max-width: 100%;
+		height: auto;
+		margin: 2% 0;
 	}
 }
 
