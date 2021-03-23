@@ -19,7 +19,7 @@ const Section = styled.section`
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100vw;
-	height: 143vh;
+	height: 115vh;
 
 	@media (max-width: 768px) {
 		height: 90vh;
@@ -61,18 +61,21 @@ const Night = () => {
 			</section>	
 			<section className='section-two'>
 					<div className='img-column'>
-						<img src={Night_Img1} alt='' />
-						<img src={Night_Img4} alt='' />
-						<img src={Night_Img5} alt='' />
+						<img src={Night_Img1} alt='Aurora Borealis' />
+						
 						
 					</div>
 					<div className='img-column'>					
+						<img src={Night_Img4} alt='' />
+						<img src={Night_Img5} alt='' />
+					</div>	
+					<div className='img-column'>					
 						<img src={Night_Img2} alt='' />
 						<img src={Night_Img3} alt='' />
-					</div>	
+					</div>
 			</section>
 		</motion.div>
 
 		)
 }
-export default TNTAutoMart;
+export default Night;

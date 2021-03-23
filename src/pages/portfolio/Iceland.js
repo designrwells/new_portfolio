@@ -5,21 +5,24 @@ import { pullUp, transition } from '../../animations';
 import { Link } from 'react-router-dom';
 
 //images
-import Iceland_Background from '../../img/iceland/iceland_background.jpg';
+import Iceland_Background from '../../img/iceland/iceland_bg.jpg';
 import Iceland_Img1 from '../../img/iceland/iceland_img1.jpg';
 import Iceland_Img2 from '../../img/iceland/iceland_img2.jpg';
 import Iceland_Img3 from '../../img/iceland/iceland_img3.jpg';
 import Iceland_Img4 from '../../img/iceland/iceland_img4.jpg';
 import Iceland_Img5 from '../../img/iceland/iceland_img5.jpg';
-
+import Iceland_Img6 from '../../img/iceland/iceland_img6.jpg';
+import Iceland_Img7 from '../../img/iceland/iceland_img7.jpg';
+import Iceland_Img8 from '../../img/iceland/iceland_img8.jpg';
+import Iceland_Img9 from '../../img/iceland/iceland_img9.jpg';
 
 //page styles
 const Section = styled.section`
-	background: url(${iceland_Background});
+	background: url(${Iceland_Background});
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100vw;
-	height: 143vh;
+	height: 113vh;
 
 	@media (max-width: 768px) {
 		height: 90vh;
@@ -59,16 +62,19 @@ const Iceland = () => {
 					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
 				</div>
 			</section>	
-			<section className='section-two'>
+			<section className='section-two' style={{paddingBottom: '5%'}}>
 					<div className='img-column'>
-						<img src={Iceland_Img1} alt='iceland engagement photo 1' />
-						<img src={Iceland_Img4} alt='iceland engagement photo 2' />
-						<img src={Iceland_Img5} alt='iceland engagement photo 3' />
+						<img src={Iceland_Img9} alt='iceland engagement 1' />
+						<img src={Iceland_Img3} alt='iceland engagement 2' />
+						<img src={Iceland_Img8} alt='iceland engagement 3' />
+						<img src={Iceland_Img7} alt='iceland engagement 3' />
 						
 					</div>
 					<div className='img-column'>					
-						<img src={Iceland_Img2} alt='iceland engagement photo 4' />
-						<img src={Iceland_Img3} alt='Utah engagement photo 5' />
+						<img src={Iceland_Img2} alt='iceland engagement 4' />
+						<img src={Iceland_Img6} alt='Utah engagement 5' />
+						<img src={Iceland_Img1} alt='Utah engagement 5' />
+						<img src={Iceland_Img5} alt='iceland engagement 3' />
 					</div>	
 			</section>
 		</motion.div>
