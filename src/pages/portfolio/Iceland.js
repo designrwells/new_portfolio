@@ -9,7 +9,6 @@ import Iceland_Background from '../../img/iceland/iceland_bg.jpg';
 import Iceland_Img1 from '../../img/iceland/iceland_img1.jpg';
 import Iceland_Img2 from '../../img/iceland/iceland_img2.jpg';
 import Iceland_Img3 from '../../img/iceland/iceland_img3.jpg';
-import Iceland_Img4 from '../../img/iceland/iceland_img4.jpg';
 import Iceland_Img5 from '../../img/iceland/iceland_img5.jpg';
 import Iceland_Img6 from '../../img/iceland/iceland_img6.jpg';
 import Iceland_Img7 from '../../img/iceland/iceland_img7.jpg';
@@ -51,15 +50,16 @@ const Iceland = () => {
 			<section className='section-two'>
 				<div className='column'>
 					<h2>THE CHALLENGE</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>
+						Traveling 1000+ miles around Iceland to photograph some of the world's most scenic locations and landscapes.
+					</p>
 				</div>
 				<div className='column'>
 					<h2>THE SOLUTION</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>
+						Mapped over 70 locations and created a flexible route in Google Maps to plan around weather, timing, and camp location
+						over the course of 10 days. Went equipped with a 28-300mm lens for versatility (and minimal lens swap time) and an 18-55mm for wide angle range.
+					</p>
 				</div>
 			</section>	
 			<section className='section-three'>

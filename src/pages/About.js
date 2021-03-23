@@ -75,15 +75,15 @@ const Column = styled(motion.div)`
 		text-align: left;
 	}
 	span {
-		margin: 7px 0 15px -9px;
+		margin: 7px 0 25px -13px;
 	}
 	i {
-		font-size: 45px;
+		font-size: 55px;
 		margin: 0 15px;
 	}
 `;
 const Icon = styled.img`
-    width: 40px;
+    width: 48px;
     fill: #000;
     margin: 0 15px -3px 15px;
 `;
@@ -140,8 +140,12 @@ const About = () => {
 				<RowFirst>
 					<Column>
 						<h2>OH, HEY THERE!</h2>
-						<p>My name is Darrin and I like to create things - with my hands or with a mouse and keyboard. Armed with a wide creative skillset and teamed up with my trusty basset hound sidekick, 
-						I might just be the superhero equipped to help elevate your ideas to their full potential. <br /><br />I guess you could say I'm ready to help write your....Neverending Story.
+						<p>My name is Darrin and I like to create things - with my hands or with a mouse and keyboard. 
+						Armed with a wide creative skillset and teamed up with my trusty basset hound sidekick, 
+						I might just be the superhero equipped to help elevate your ideas to their full potential. 
+						<br /><br />Let's work together! 
+						<br /><br />I guess you could say I'm ready to help write your....Neverending Story.
+						<br /><br />(ba dum tss!)
 						</p>
 						
 					</Column>
@@ -174,8 +178,8 @@ const About = () => {
 					<Column>
 						<h3>DISCIPLINES</h3>
 						<p style={{lineHeight: '145%'}}>
-						Websites<br />
 						User Experience<br />
+						Website Development<br />
 						Branding<br />
 						Photography<br />
 						Retouching<br />

@@ -35,25 +35,26 @@ const PhotoRes = () => {
 			<Section>
 				<div className='back-wrapper'><Link className='back-link' to='/portfolio'><i className='fas fa-arrow-left' ></i>BACK</Link></div>	
 				<div className='intro-content'>
-					<div>MENDED MOMENTS PHOTO RESTORATION</div>
-					<h1>WEBSITE & DESIGN FOR<br />MENDED MOMENTS</h1>
+					<div>PHOTO RESTORATION</div>
+					<h1>DIGITAL RETOUCHING<br />AND RESTORATION</h1>
 				</div>
 			</Section>	
 			<section className='section-two'>
 				<div className='column'>
 					<h2>THE CHALLENGE</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>Repairing photographs that are aged or damaged from the sun, liquids, tears, burns, folds, or simply because older photos 
+					weren't captured with the quality of today's camera technology. 
+					</p>
 				</div>
 				<div className='column'>
 					<h2>THE SOLUTION</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>Harnessed the power of Adobe Photoshop and high resolution scanning to fill gaps and cracks, remove blemishes, and 
+					restore/add color all in scrutinous detail. This process often included at least three passes as damage was removed, textures
+					were improved, and color was restored and/or added to a more natural state.	
+					</p>
 				</div>
 			</section>	
-			<section className='section-two'>
+			<section className='section-three'>
 					<div className='img-column'>
 						<img src={PhotoRes_Img1} alt='Mended Moments Website Front Page' />
 						<img src={PhotoRes_Img2} alt='Mended Moments Brochure1' />
