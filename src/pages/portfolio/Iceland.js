@@ -62,7 +62,7 @@ const Iceland = () => {
 					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
 				</div>
 			</section>	
-			<section className='section-two' style={{paddingBottom: '5%'}}>
+			<section className='section-three'>
 					<div className='img-column'>
 						<img src={Iceland_Img9} alt='iceland engagement 1' />
 						<img src={Iceland_Img3} alt='iceland engagement 2' />

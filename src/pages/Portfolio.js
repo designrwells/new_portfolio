@@ -8,7 +8,7 @@ import PortfolioGrid from '../components/PortfolioGrid';
 
 //page styles
 const Section = styled.section`
-	background: #242123;
+	background: #252E36;
 	min-height: 100vh;
 `;
 const Title = styled.div`
