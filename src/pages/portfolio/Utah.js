@@ -27,7 +27,7 @@ const Section = styled.section`
 `;
 
 
-const TNTAutoMart = () => {
+const Utah = () => {
 
 	return (
 
@@ -62,18 +62,18 @@ const TNTAutoMart = () => {
 			</section>	
 			<section className='section-two'>
 					<div className='img-column'>
-						<img className='wide-photo' src={Utah_Img1} alt='TNT AutoMart Sign' />
-						<img src={Utah_Img4} alt='TNT AutoMart Logo' />
-						<img className='wide-photo' src={Utah_Img5} alt='TNT AutoMart Website Front Page' />
+						<img className='wide-photo' src={Utah_Img1} alt='Utah engagement photo 1' />
+						<img src={Utah_Img4} alt='Utah engagement photo 2' />
+						<img className='wide-photo' src={Utah_Img5} alt='Utah engagement photo 3' />
 						
 					</div>
 					<div className='img-column'>					
-						<img src={Utah_Img2} alt='TNT AutoMart Sign' />
-						<img src={Utah_Img3} alt='TNT AutoMart Sign' />
+						<img src={Utah_Img2} alt='Utah engagement photo 4' />
+						<img src={Utah_Img3} alt='Utah engagement photo 5' />
 					</div>	
 			</section>
 		</motion.div>
 
 		)
 }
-export default TNTAutoMart;
+export default Utah;

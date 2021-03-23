@@ -38,7 +38,7 @@ const TNTAutoMart = () => {
 				<div className='intro-content'>
 					<div>TNT AUTOMART</div>
 					<h1>LOGO & WEB DESIGN<br />FOR TNT AUTOMART</h1>
-					<Logo src={TNT_Logo} alt='Mended Moments Logo' />
+					<Logo src={TNT_Logo} alt='TNT Automart Logo' />
 				</div>
 			</Section>	
 			<section className='section-two'>
