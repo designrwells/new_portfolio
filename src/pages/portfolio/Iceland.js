@@ -5,21 +5,29 @@ import { pullUp, transition } from '../../animations';
 import { Link } from 'react-router-dom';
 
 //images
-import MDS_Logo from '../../svg/mds_logo.svg';
-import MDS_Img1 from '../../img/mds/mds_img1.jpg';
-import MDS_Img2 from '../../img/mds/mds_img2.jpg';
+import Iceland_Background from '../../img/iceland/iceland_background.jpg';
+import Iceland_Img1 from '../../img/iceland/iceland_img1.jpg';
+import Iceland_Img2 from '../../img/iceland/iceland_img2.jpg';
+import Iceland_Img3 from '../../img/iceland/iceland_img3.jpg';
+import Iceland_Img4 from '../../img/iceland/iceland_img4.jpg';
+import Iceland_Img5 from '../../img/iceland/iceland_img5.jpg';
+
 
 //page styles
 const Section = styled.section`
-	background: #000;
+	background: url(${iceland_Background});
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 100vw;
-	height: 100vh;
-`;
-const Logo = styled.img`
-	width: clamp(250px, 15vw, 600px);
+	height: 143vh;
+
+	@media (max-width: 768px) {
+		height: 90vh;
+	}
 `;
 
-const MDS = () => {
+
+const Iceland = () => {
 
 	return (
 
@@ -33,9 +41,8 @@ const MDS = () => {
 			<Section>
 				<div className='back-wrapper'><Link className='back-link' to='/portfolio'><i className='fas fa-arrow-left' ></i>BACK</Link></div>	
 				<div className='intro-content'>
-					<div>MEDICAL DEVICE SUCCESS</div>
-					<h1> MDS LOGO & WEB DESIGN</h1>
-					<Logo src={MDS_Logo} alt='Mended Moments Logo' />
+					<div>ICELAND LANDSCAPES</div>
+					<h1>LANDSCAPE PHOTOGRAPHY<br />IN ICELAND</h1>				
 				</div>
 			</Section>	
 			<section className='section-two'>
@@ -54,14 +61,18 @@ const MDS = () => {
 			</section>	
 			<section className='section-two'>
 					<div className='img-column'>
-						<img src={MDS_Img1} alt='Medical Device Success Website Front Page' />
+						<img src={Iceland_Img1} alt='iceland engagement photo 1' />
+						<img src={Iceland_Img4} alt='iceland engagement photo 2' />
+						<img src={Iceland_Img5} alt='iceland engagement photo 3' />
+						
 					</div>
 					<div className='img-column'>					
-						<img src={MDS_Img2} alt='Medical Device Success Logo' />
+						<img src={Iceland_Img2} alt='iceland engagement photo 4' />
+						<img src={Iceland_Img3} alt='Utah engagement photo 5' />
 					</div>	
 			</section>
 		</motion.div>
 
 		)
 }
-export default MDS;
+export default Iceland;

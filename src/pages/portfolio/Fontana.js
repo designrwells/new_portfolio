@@ -5,21 +5,21 @@ import { pullUp, transition } from '../../animations';
 import { Link } from 'react-router-dom';
 
 //images
-import MDS_Logo from '../../svg/mds_logo.svg';
-import MDS_Img1 from '../../img/mds/mds_img1.jpg';
-import MDS_Img2 from '../../img/mds/mds_img2.jpg';
+import Fontana_Logo from '../../svg/fontana_logo.svg';
+import Fontana_Img1 from '../../img/fontana/fontana_img1.png';
+
 
 //page styles
 const Section = styled.section`
-	background: #000;
+	background: linear-gradient(to top, #ED1F24, #ED1F24 5%, #FFF 5%, #FFF 50%, #43B649 50%);
 	width: 100vw;
-	height: 100vh;
+	min-height: 103vh;
 `;
 const Logo = styled.img`
-	width: clamp(250px, 15vw, 600px);
+	width: clamp(450px, 30vw, 600px);
 `;
 
-const MDS = () => {
+const Fontana = () => {
 
 	return (
 
@@ -33,9 +33,9 @@ const MDS = () => {
 			<Section>
 				<div className='back-wrapper'><Link className='back-link' to='/portfolio'><i className='fas fa-arrow-left' ></i>BACK</Link></div>	
 				<div className='intro-content'>
-					<div>MEDICAL DEVICE SUCCESS</div>
-					<h1> MDS LOGO & WEB DESIGN</h1>
-					<Logo src={MDS_Logo} alt='Mended Moments Logo' />
+					<div>TNT AUTOMART</div>
+					<h1>LOGO & WEB DESIGN<br />FOR TNT AUTOMART</h1>
+					<Logo src={Fontana_Logo} alt='Fontana Logo' />
 				</div>
 			</Section>	
 			<section className='section-two'>
@@ -54,14 +54,11 @@ const MDS = () => {
 			</section>	
 			<section className='section-two'>
 					<div className='img-column'>
-						<img src={MDS_Img1} alt='Medical Device Success Website Front Page' />
-					</div>
-					<div className='img-column'>					
-						<img src={MDS_Img2} alt='Medical Device Success Logo' />
+						<img src={Fontana_Img1} alt='Fontana bread package label' />
 					</div>	
 			</section>
 		</motion.div>
 
 		)
 }
-export default MDS;
+export default Fontana;

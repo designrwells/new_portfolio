@@ -15,6 +15,12 @@ import TNTAutoMart from './pages/portfolio/TNTAutoMart';
 import MDS from './pages/portfolio/MDS';
 import DOS from './pages/portfolio/DOS';
 import Utah from './pages/portfolio/Utah';
+import PhotoRes from './pages/portfolio/PhotoRes';
+import Fontana from './pages/portfolio/Fontana';
+import Ace from './pages/portfolio/Ace';
+import Plastic from './pages/portfolio/Plastic';
+import Night from './pages/portfolio/Night';
+import Iceland from './pages/portfolio/Iceland';
 
 
 const Body = styled.section`
@@ -41,6 +47,12 @@ const App = () => {
           <Route path='/medical-device-success' component={MDS} />
           <Route path='/discount-office-source' component={DOS} />
           <Route path='/utah-engagement' component={Utah} />
+          <Route path='/photo-restoration' component={PhotoRes} />
+          <Route path='/fontana' component={Fontana} />
+          <Route path='/ace-automotive' component={Ace} />
+          <Route path='/the-plastic-truth' component={Plastic} />
+          <Route path='/iceland-landscapes' component={Iceland} />
+          <Route path='/night-skies' component={Night} />
         </Switch>
     </Body>
   );

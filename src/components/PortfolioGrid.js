@@ -14,7 +14,7 @@ import MM_Thumb from '../img/mm_thumb.jpg';
 import TNT_Thumb from '../img/tnt_thumb.png';
 import DOS_Thumb from '../img/dos_thumb.png';
 import BH_Thumb from '../img/bh_thumb.png';
-import Ace_Thumb from '../img/ace_thumb.png';
+import Ace_Thumb from '../img/ace_thumb.jpg';
 import Utah_Thumb from '../img/utah_thumb.jpg';
 import Plastic_Thumb from '../img/plastic_thumb.jpg';
 import Fontana_Thumb from '../img/fontana_thumb.jpg';
@@ -139,7 +139,7 @@ const imgs = [{alt:"Mended Moments", tag:"WEB DEVELOPMENT", page:"/mended-moment
               {alt:"TNT AutoMart", tag:"WEB DEVELOPMENT", page:"/tnt-automart", src:TNT_Thumb, description:<><i className='fab fa-wordpress-simple'></i><i className='fab fa-html5'></i><i className='fab fa-css3-alt'></i><img src={AiSVG} alt='' /><img src={PsSVG} alt='' /><i className='fas fa-camera'></i></>},
               {alt:"Medical Device Success", tag:"WEB DEVELOPMENT", page:"/medical-device-success", src:MDS_Thumb, description:<><i className='fab fa-wordpress-simple'></i><i className='fab fa-html5'></i><i className='fab fa-css3-alt'></i><i className='fab fa-elementor'></i><img src={AiSVG} alt='' /></>},
               {alt:"Discount Office Source", tag:"WEB DEVELOPMENT", page:"/discount-office-source", src:DOS_Thumb, description:<><i className='fab fa-html5'></i><i className='fab fa-css3-alt'></i><i className='fab fa-js'></i><img src={AiSVG} alt='' /><img src={PsSVG} alt='' /></>},
-              {alt:"Brisket House", tag:"DESIGN", page:"/briskethouse", src:BH_Thumb, description:<><img src={AiSVG} alt='' /></>},
+              //{alt:"Brisket House", tag:"DESIGN", page:"/briskethouse", src:BH_Thumb, description:<><img src={AiSVG} alt='' /></>},
               {alt:"The Plastic Truth", tag:"DESIGN", page:"/the-plastic-truth", src:Plastic_Thumb,  description:<><img src={AiSVG} alt='' /></>},   
               {alt:"Ace Automotive", tag:"DESIGN", page:"/ace-automotive", src:Ace_Thumb, description:<><img src={AiSVG} alt='' /><img src={PsSVG} alt='' /><b>FlexiSign Pro</b></>},
               {alt:"Fontana", tag:"DESIGN", page:"/fontana", src:Fontana_Thumb, description:<><img src={AiSVG} alt='' /></> },
@@ -148,7 +148,7 @@ const imgs = [{alt:"Mended Moments", tag:"WEB DEVELOPMENT", page:"/mended-moment
               //{alt:"Landscapes", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/landscapes", src:""},
               {alt:"Night Photography", tag:"PHOTOGRAPHY", page:"/night-scapes", src:Night_Thumb, description:<><i className='fas fa-camera'></i><img src={LrSVG} alt='' /></>},
               //{alt:"Nature", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/nature", src:"http://darrinwells.com/img/thumbnails/nature_thumb.jpg"},
-              {alt:"Iceland Landscapes", tag:"PHOTOGRAPHY", page:"/icland-landscapes", src:Iceland_Thumb, description:<><i className='fas fa-camera'></i><img src={LrSVG} alt='' /></>},
+              {alt:"Iceland Landscapes", tag:"PHOTOGRAPHY", page:"/iceland-landscapes", src:Iceland_Thumb, description:<><i className='fas fa-camera'></i><img src={LrSVG} alt='' /></>},
               //{alt:"Oklahoma Storms", tag:"PHOTOGRAPHY", page:"/other", src:"", description:<><i className='fas fa-camera'></i><img src={LrSVG} alt='' /></>},
               //{alt:"The Wild Acreage", description:"Adobe Illustrator", tag:"DESIGN", page:"/wild-acreage", src:""},
               //{alt:"SRD Vision", description:"Wordpress, Elementor", tag:"WEB DEVELOPMENT", page:"/SRD-Vision", src:"https://www.srdvision.com/wp-content/uploads/2011/08/srdvision-logo.png"}

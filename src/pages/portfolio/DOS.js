@@ -22,7 +22,7 @@ const Logo = styled.img`
 	width: clamp(100px, 35vw, 700px);	
 `;
 
-const MendedMoments = () => {
+const DOS = () => {
 
 	return (
 
@@ -38,7 +38,7 @@ const MendedMoments = () => {
 				<div className='intro-content'>
 					<div>DISCOUNT OFFICE SOURCE</div>
 					<h1>WEBSITE & DESIGN FOR <br />DISCOUNT OFFICE SOURCE</h1>
-					<Logo src={DOS_Logo} alt='Mended Moments Logo' />
+					<Logo src={DOS_Logo} alt='Discount Office Source Logo' />
 				</div>
 			</Section>	
 			<section className='section-two'>
@@ -66,4 +66,4 @@ const MendedMoments = () => {
 		</motion.div>
 		)
 }
-export default MendedMoments;
+export default DOS;

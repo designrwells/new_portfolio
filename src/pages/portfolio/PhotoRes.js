@@ -3,23 +3,25 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { pullUp, transition } from '../../animations';
 import { Link } from 'react-router-dom';
+import '../../css/projects.scss';
 
 //images
-import MDS_Logo from '../../svg/mds_logo.svg';
-import MDS_Img1 from '../../img/mds/mds_img1.jpg';
-import MDS_Img2 from '../../img/mds/mds_img2.jpg';
+import PhotoRes_Background from '../../img/photo-res/photo-res_bg.jpg';
+import PhotoRes_Img1 from '../../img/photo-res/photo-res_img1.jpg';
+import PhotoRes_Img2 from '../../img/photo-res/photo-res_img2.jpg';
+import PhotoRes_Img3 from '../../img/photo-res/photo-res_img3.jpg';
+
 
 //page styles
 const Section = styled.section`
-	background: #000;
+	background-image: url(${PhotoRes_Background});
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 100vw;
-	height: 100vh;
-`;
-const Logo = styled.img`
-	width: clamp(250px, 15vw, 600px);
+	height: 130vh;
 `;
 
-const MDS = () => {
+const PhotoRes = () => {
 
 	return (
 
@@ -33,9 +35,8 @@ const MDS = () => {
 			<Section>
 				<div className='back-wrapper'><Link className='back-link' to='/portfolio'><i className='fas fa-arrow-left' ></i>BACK</Link></div>	
 				<div className='intro-content'>
-					<div>MEDICAL DEVICE SUCCESS</div>
-					<h1> MDS LOGO & WEB DESIGN</h1>
-					<Logo src={MDS_Logo} alt='Mended Moments Logo' />
+					<div>MENDED MOMENTS PHOTO RESTORATION</div>
+					<h1>WEBSITE & DESIGN FOR<br />MENDED MOMENTS</h1>
 				</div>
 			</Section>	
 			<section className='section-two'>
@@ -54,14 +55,12 @@ const MDS = () => {
 			</section>	
 			<section className='section-two'>
 					<div className='img-column'>
-						<img src={MDS_Img1} alt='Medical Device Success Website Front Page' />
-					</div>
-					<div className='img-column'>					
-						<img src={MDS_Img2} alt='Medical Device Success Logo' />
+						<img src={PhotoRes_Img1} alt='Mended Moments Website Front Page' />
+						<img src={PhotoRes_Img2} alt='Mended Moments Brochure1' />
+						<img src={PhotoRes_Img3} alt='Mended Moments Brochure2' />
 					</div>	
 			</section>
 		</motion.div>
-
 		)
 }
-export default MDS;
+export default PhotoRes;

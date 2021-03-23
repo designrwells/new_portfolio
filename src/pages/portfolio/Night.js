@@ -5,21 +5,29 @@ import { pullUp, transition } from '../../animations';
 import { Link } from 'react-router-dom';
 
 //images
-import MDS_Logo from '../../svg/mds_logo.svg';
-import MDS_Img1 from '../../img/mds/mds_img1.jpg';
-import MDS_Img2 from '../../img/mds/mds_img2.jpg';
+import Night_Background from '../../img/night/night_bg.jpg';
+import Night_Img1 from '../../img/night/night_img1.jpg';
+import Night_Img2 from '../../img/night/night_img2.jpg';
+import Night_Img3 from '../../img/night/night_img3.jpg';
+import Night_Img4 from '../../img/night/night_img4.jpg';
+import Night_Img5 from '../../img/night/night_img5.jpg';
+
 
 //page styles
 const Section = styled.section`
-	background: #000;
+	background: url(${Night_Background});
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 100vw;
-	height: 100vh;
-`;
-const Logo = styled.img`
-	width: clamp(250px, 15vw, 600px);
+	height: 143vh;
+
+	@media (max-width: 768px) {
+		height: 90vh;
+	}
 `;
 
-const MDS = () => {
+
+const Night = () => {
 
 	return (
 
@@ -33,9 +41,8 @@ const MDS = () => {
 			<Section>
 				<div className='back-wrapper'><Link className='back-link' to='/portfolio'><i className='fas fa-arrow-left' ></i>BACK</Link></div>	
 				<div className='intro-content'>
-					<div>MEDICAL DEVICE SUCCESS</div>
-					<h1> MDS LOGO & WEB DESIGN</h1>
-					<Logo src={MDS_Logo} alt='Mended Moments Logo' />
+					<div>NIGHT SKIES</div>
+					<h1>PHOTOGRAPHS<br />TAKEN AFTER DARK</h1>				
 				</div>
 			</Section>	
 			<section className='section-two'>
@@ -54,14 +61,18 @@ const MDS = () => {
 			</section>	
 			<section className='section-two'>
 					<div className='img-column'>
-						<img src={MDS_Img1} alt='Medical Device Success Website Front Page' />
+						<img src={Night_Img1} alt='' />
+						<img src={Night_Img4} alt='' />
+						<img src={Night_Img5} alt='' />
+						
 					</div>
 					<div className='img-column'>					
-						<img src={MDS_Img2} alt='Medical Device Success Logo' />
+						<img src={Night_Img2} alt='' />
+						<img src={Night_Img3} alt='' />
 					</div>	
 			</section>
 		</motion.div>
 
 		)
 }
-export default MDS;
+export default TNTAutoMart;

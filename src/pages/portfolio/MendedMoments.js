@@ -16,6 +16,8 @@ import MM_Img3 from '../../img/mended-moments/mm_img3.jpg';
 //page styles
 const Section = styled.section`
 	background-image: url(${MM_Background});
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 100vw;
 	height: 110vh;
 `;
