@@ -59,7 +59,7 @@ const Night = () => {
 					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
 				</div>
 			</section>	
-			<section className='section-two'>
+			<section className='section-three'>
 					<div className='img-column'>
 						<img src={Night_Img1} alt='Aurora Borealis' />
 						

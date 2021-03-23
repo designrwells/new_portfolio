@@ -63,22 +63,30 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 10% 5% 0 5%;
+	padding: 7% 5% 0 5%;
 }
-
+.section-three {
+	background: #fff;
+	width: 100vw;
+	margin-top: -1px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 7% 5%;
+}
 .column {
 	width: 500px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin: 0 5%;
+	margin: 5% 7%;
 	h2 {
 		font-family: 'Oswald', sans-serif;
 		font-size: clamp(32px, 2.7vw, 80px);
-		margin-bottom: 4%;
+		margin-bottom: 8%;
 	}
 	p {
-		font-size: clamp(1.2rem, 1.2vw, 22px);
+		font-size: clamp(1.2rem, 1.3vw, 24px);
 	}
 }
 

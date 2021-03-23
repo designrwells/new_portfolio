@@ -142,7 +142,6 @@ const imgs = [{alt:"Mended Moments", tag:"WEB DEVELOPMENT", page:"/mended-moment
               {alt:"Utah Engagement", tag:"PHOTOGRAPHY", page:"/utah-engagement", src:Utah_Thumb, description:<><i className='fas fa-camera'></i><img src={PsSVG} alt='' /><img src={LrSVG} alt='' /></>},
               {alt:"Photo Restoration", tag:"DESIGN", page:"/photo-restoration", src:PR_Thumb, description:<><img src={PsSVG} alt='' /></>},
               {alt:"Discount Office Source", tag:"WEB DEVELOPMENT", page:"/discount-office-source", src:DOS_Thumb, description:<><i className='fab fa-html5'></i><i className='fab fa-css3-alt'></i><i className='fab fa-js'></i><img src={AiSVG} alt='' /><img src={PsSVG} alt='' /></>},
-              //{alt:"Brisket House", tag:"DESIGN", page:"/briskethouse", src:BH_Thumb, description:<><img src={AiSVG} alt='' /></>},
               {alt:"The Plastic Truth", tag:"DESIGN", page:"/the-plastic-truth", src:Plastic_Thumb,  description:<><img src={AiSVG} alt='' /></>},   
               {alt:"Night Photography", tag:"PHOTOGRAPHY", page:"/night-skies", src:Night_Thumb, description:<><i className='fas fa-camera'></i><img src={LrSVG} alt='' /></>},
               {alt:"Ace Automotive", tag:"DESIGN", page:"/ace-automotive", src:Ace_Thumb, description:<><img src={AiSVG} alt='' /><img src={PsSVG} alt='' /><b>FlexiSign Pro</b></>},
@@ -151,6 +150,7 @@ const imgs = [{alt:"Mended Moments", tag:"WEB DEVELOPMENT", page:"/mended-moment
               //{alt:"Nature", description:"Nikon D750", tag:"PHOTOGRAPHY", page:"/nature", src:"http://darrinwells.com/img/thumbnails/nature_thumb.jpg"},
               //{alt:"Oklahoma Storms", tag:"PHOTOGRAPHY", page:"/other", src:"", description:<><i className='fas fa-camera'></i><img src={LrSVG} alt='' /></>},
               //{alt:"The Wild Acreage", description:"Adobe Illustrator", tag:"DESIGN", page:"/wild-acreage", src:""},
+              //{alt:"Brisket House", tag:"DESIGN", page:"/briskethouse", src:BH_Thumb, description:<><img src={AiSVG} alt='' /></>},
               //{alt:"SRD Vision", description:"Wordpress, Elementor", tag:"WEB DEVELOPMENT", page:"/SRD-Vision", src:"https://www.srdvision.com/wp-content/uploads/2011/08/srdvision-logo.png"}
 ];
 

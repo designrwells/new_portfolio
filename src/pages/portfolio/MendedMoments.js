@@ -47,18 +47,21 @@ const MendedMoments = () => {
 			<section className='section-two'>
 				<div className='column'>
 					<h2>THE CHALLENGE</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>Determining a way to market photo restoration services to both older and younger generations both online
+					and in print form. A website offering it's service in a palpable way that would provide
+					the availablility several custom checkout options allowing customers to tailor service orders.
+					</p>
 				</div>
 				<div className='column'>
 					<h2>THE SOLUTION</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>Created a simple Wordpress website, logo, and print materials that would give users an "old timey" vintage feel while maintaing solid UI/UX design.
+					 Detailed the process of restoring old and damaged photos by using the Elementor plugin to add before/after sliders. With the help of WooCommerce and 
+					 and an additional plugin, user image uploads and custom order options were expanded upon in the checkout process.
+						
+					</p>
 				</div>
 			</section>	
-			<section className='section-two'>
+			<section className='section-three'>
 					<div className='img-column'>
 						<img src={MM_Img1} alt='Mended Moments Website Front Page' />
 					</div>
