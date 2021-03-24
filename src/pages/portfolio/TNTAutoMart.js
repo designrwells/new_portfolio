@@ -44,15 +44,19 @@ const TNTAutoMart = () => {
 			<section className='section-two'>
 				<div className='column'>
 					<h2>THE CHALLENGE</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>Creating a clean, retro style logo alongside a website optimized for vehicle inventory management. This needed to include 
+					vehicle photos, prices, and various available inventory specifications. TNT AutoMart is a family owned business wanting to 
+					represent pride in both their and hardworking team.
+					</p>
 				</div>
 				<div className='column'>
 					<h2>THE SOLUTION</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>Worked with the team to come up with a logo idea to be used on billboard sign, apparel, and print before designing it Adobe Illustrator.
+					 Redesigned an initial template in Wordpress, using the WPBakery Page Builder plugin to make major revisions and create new pages. 
+					 Added custom HTML, CSS, and PHP to further tweak changes to the theme, forms, and overall styling. Provided photography of staff, actions shots,
+					 and vehicle inventory.
+					 <br />Visit them <a href='https://tntautomartok.com/' target="_blank">here</a>.
+					</p>
 				</div>
 			</section>	
 			<section className='section-two'>

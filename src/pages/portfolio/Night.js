@@ -48,22 +48,22 @@ const Night = () => {
 			<section className='section-two'>
 				<div className='column'>
 					<h2>THE CHALLENGE</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>
+						Various attempts at long exposure photography in an effort to capture images of the stars, the moon, or late night traffic. 
+					</p>
 				</div>
 				<div className='column'>
 					<h2>THE SOLUTION</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>
+						Equipped with a sturdy tripod and a camera with a high ISO range and after much trial and error, I was able to produce some
+						photos featuring the milky way and even the Aurora Borealis. This required very minimal light pollution, a perfectily still camera,
+						a low F-Stop, and no more than a 10 - 30 second shutter speed.
+					</p>
 				</div>
 			</section>	
 			<section className='section-three'>
 					<div className='img-column'>
 						<img src={Night_Img1} alt='Aurora Borealis' />
-						
-						
 					</div>
 					<div className='img-column'>					
 						<img src={Night_Img4} alt='' />

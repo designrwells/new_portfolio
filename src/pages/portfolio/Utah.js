@@ -41,7 +41,7 @@ const Utah = () => {
 			<Section>
 				<div className='back-wrapper'><Link className='back-link' to='/portfolio'><i className='fas fa-arrow-left' ></i>BACK</Link></div>	
 				<div className='intro-content'>
-					<div>Utah Engagement</div>
+					<div>UTAH ENGAGEMENT</div>
 					<h1>PHOTOSHOOT<br />FOR UTAH COUPLE</h1>
 					
 				</div>
@@ -49,18 +49,20 @@ const Utah = () => {
 			<section className='section-two'>
 				<div className='column'>
 					<h2>THE CHALLENGE</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>
+						Traveling to several locations in the Ogden & Salt Lake City areas and identifying ideal spots for lighting and portrait shots. 
+					</p>
 				</div>
 				<div className='column'>
 					<h2>THE SOLUTION</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>
+						Made good use of natural sunlight to provide backlighting for these two superheroes, and to evoke a silhouette story book feel in another image. 
+						Experimented with different framing and lens flares for more realistic effect and less digital editing. Made minor color and lighting corrections in 
+						Adobe Lightroom and Photoshop.
+					</p>
 				</div>
 			</section>	
-			<section className='section-two'>
+			<section className='section-three'>
 					<div className='img-column'>
 						<img className='wide-photo' src={Utah_Img1} alt='Utah engagement photo 1' />
 						<img src={Utah_Img4} alt='Utah engagement photo 2' />

@@ -33,26 +33,28 @@ const Fontana = () => {
 			<Section>
 				<div className='back-wrapper'><Link className='back-link' to='/portfolio'><i className='fas fa-arrow-left' ></i>BACK</Link></div>	
 				<div className='intro-content'>
-					<div>TNT AUTOMART</div>
-					<h1>LOGO & WEB DESIGN<br />FOR TNT AUTOMART</h1>
+					<div>FONTANA</div>
+					<h1>RESTAURANT<br />LOGO & BRAND DESIGN</h1>
 					<Logo src={Fontana_Logo} alt='Fontana Logo' />
 				</div>
 			</Section>	
 			<section className='section-two'>
 				<div className='column'>
 					<h2>THE CHALLENGE</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>
+						Spec logo for a local Italian restaurant. The goal in mind was to capture the friendly, comforting feel of this little restaurant, while 
+						adding a little more of a modern edge. In addition, I wanted to create a packaging label for their delicious homemade bread.
+					</p>
 				</div>
 				<div className='column'>
 					<h2>THE SOLUTION</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>
+						Finding the perfect font, using Italy's flag colors, and adding an olive branch that flowed with the font, I used Adobe Illustrator to create
+						a logo that felt as great as the food of the place that would serve it. 
+					</p>
 				</div>
 			</section>	
-			<section className='section-two'>
+			<section className='section-three'>
 					<div className='img-column'>
 						<img src={Fontana_Img1} alt='Fontana bread package label' />
 					</div>	

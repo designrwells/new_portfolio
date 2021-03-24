@@ -8,6 +8,12 @@ const Form = styled.form`
   	flex-direction: column;
   	width: 55vw;
   	text-align: center;
+    margin-bottom: 10%;
+
+    @media (max-width: 768px){
+      margin-top: 15%;
+      width: 85vw;
+    }
 
   	h1 {
 		color: #151E30;

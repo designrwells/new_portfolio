@@ -43,15 +43,13 @@ const SectionTwo = styled.section`
 	width: 100vw;
 	margin-top: -1px;
 	display: flex;
-	
 	flex-wrap: wrap;
-	padding: 4%;
 `;
 const Column = styled(motion.div)`
 	width: 600px;
 	display: flex;
 	flex-direction: column;
-	margin: 0 2%;
+	margin: 0 5%;
 
 	@media (max-width: 1480px){
 			display: flex;
@@ -80,12 +78,19 @@ const Column = styled(motion.div)`
 	i {
 		font-size: 55px;
 		margin: 0 15px;
+
+		@media (max-width: 550px){
+			font-size: 30px;
+		}
 	}
 `;
 const Icon = styled.img`
     width: 48px;
-    fill: #000;
     margin: 0 15px -3px 15px;
+
+    @media (max-width: 550px){
+			width: 28px;
+		}
 `;
 const Portrait = styled.img`
 	max-width: 100%;
@@ -97,7 +102,7 @@ const Portrait = styled.img`
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			max-width: 90%;
+			
 		}
 `;
 const RowFirst = styled.div`
@@ -106,7 +111,7 @@ const RowFirst = styled.div`
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100vw;
-	margin: 5% 0 0px 0;
+	margin: 7% 0 0px 0;
 `;
 const RowSecond = styled.div`
 	display: flex;
@@ -114,7 +119,7 @@ const RowSecond = styled.div`
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100vw;
-	margin: 2% 0;
+	margin-bottom: 150px;
 
 	@media (max-width: 1480px){
 		margin: 2% 0 0 0;

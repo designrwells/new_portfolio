@@ -43,14 +43,17 @@ const Ace = () => {
 			<section className='section-two'>
 				<div className='column'>
 					<h2>THE CHALLENGE</h2>
-					<p>Local auto shop requested a photo-realistic banner with sheet metal texture to be used for a new logo and 
-					banner above the store front. </p>
+					<p>
+						Local auto shop requested a photo-realistic banner and logo to be mounted above their storefront. The requirements were to include a
+						wrench and diamond plate metal texture as a background.
+					</p>
 				</div>
 				<div className='column'>
 					<h2>THE SOLUTION</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p> 
+						After designing the project in Adobe Illustrator and Photoshop, the image was then measured, scaled to fit, printed and cut for placement 
+						on four 8ft x 2ft acrylic slabs, totalling 32ft in length.
+					</p>
 				</div>
 			</section>	
 			<section className='section-two'>

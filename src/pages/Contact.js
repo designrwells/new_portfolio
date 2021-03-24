@@ -7,7 +7,8 @@ import ContactForm from '../components/ContactForm';
 //page styles
 const Section = styled.section`
 	background: #D1E2EB;
-	height: 100vh;
+	width: 100vw;
+	min-height: 100vh;
 `;
 
 const FormWrapper = styled.div `

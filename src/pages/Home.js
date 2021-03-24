@@ -21,21 +21,28 @@ const Main = styled.div`
 	align-items: center;
 
 	img {
-		width: clamp(520px, 60vw, 1300px);
+		width: clamp(300px, 60vw, 1300px);
 		opacity: 0.04;
 		animation: ${dwRotate} 250s infinite linear;
+		@media (max-width: 768px) {
+			position: relative;
+			margin-bottom: 40%;
+		}
 	}
 `;
 const Heading = styled(motion.div)`
 	position: absolute;
-	top: clamp(50px, 30vh, 120px);
+	top: 10%;
+	left: 10%;
 	width: clamp(300px, 60%, 60%);
-	margin: 10vh 15vw;
+	margin: 10vh 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	img {
+		width: clamp(250px, 60vw, 1300px);
+		height: auto;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -57,8 +64,6 @@ const Home = () => {
 			<Section>
 				<Main>
 				<img src={DW_Logo} alt='DW Logo' />
-				
-					
 				</Main>
 				<Heading>
 						<img src={Home_Intro} alt='DW Intro' />
