@@ -26,18 +26,19 @@ import Night_Thumb from '../img/night_thumb.jpg';
 const GridNav = styled(motion.div)`
   display: flex;
   justify-content: center;
-  margin: 30px 0 40px 0;
+  margin: 40px 0 30px 0;
 
   ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
-    padding: 0 15vw;
+    padding: 0 12vw;
   }
 
   li {
-    margin: 10px 10px;
+    margin: 8px 10px;
   }
 `;
 
@@ -71,7 +72,7 @@ const CardsContainer = styled.div`
   align-items: center;
   margin: 0 auto;
   list-style: none;
-  padding: 0 15vw;
+  padding: 0 12vw;
 
   div {
     margin: 10px 10px;

@@ -9,8 +9,6 @@ import '../../css/projects.scss';
 import DOS_Logo from '../../svg/dos_logo.svg';
 import DOS_Img1 from '../../img/dos/dos_img1.jpg';
 import DOS_Img2 from '../../img/dos/dos_img2.jpg';
-//import DOS_Img3 from '../../img/DOS/dos_img3.jpg';
-
 
 //page styles
 const Section = styled.section`
@@ -44,18 +42,23 @@ const DOS = () => {
 			<section className='section-two'>
 				<div className='column'>
 					<h2>THE CHALLENGE</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>
+					 Discount Office Source is a ink, toner, and office supplies company. To meet their business needs, they required a large ecommerce web presence 
+					 capable of mass product managment, reliable uptime, and sturdy functionality. They would also need analytical data to later form product marketing
+					 campaigns and for search engine optimization purposes.
+					</p>
 				</div>
 				<div className='column'>
 					<h2>THE SOLUTION</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>
+						Designed website within the boundaries of the Network Solutions ecommerce platform to meet desired specifications. Created logo and ads, implemented 
+						6000+ products, performed keyword research, and gathered SEO data through Google Analytics. All of this required the study of the business, products, 
+						market, and target audience to allow for specific, effective designs and page information. Additionally, a JavaScript search tool was created to allow
+						users to easily search and match their specific machines to their compatible office supplies.
+					</p>
 				</div>
 			</section>	
-			<section className='section-two'>
+			<section className='section-three'>
 					<div className='img-column'>
 						<img src={DOS_Img1} alt='Discount Office Source Website Front Page' />
 					</div>

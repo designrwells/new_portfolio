@@ -41,15 +41,15 @@ const MDS = () => {
 			<section className='section-two'>
 				<div className='column'>
 					<h2>THE CHALLENGE</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>Medical Device Success is a professional blog space & podcast that offers consultation and advice in the medtech industry. The goal 
+					was to update the brand presence with a more up-to-date logo and responsive, user-frienldy website.</p>
 				</div>
 				<div className='column'>
 					<h2>THE SOLUTION</h2>
-					<p>Quae rerum ipsum modi. Placeat sunt aliquam eius qui nam magni aliquam. Consequatur tenetur nesciunt ipsa. 
-					Aperiam voluptas eum tempore optio ut ex aliquam. Sint velit sit facere labore tempora totam enim ipsum. 
-					Maiores autem suscipit enim voluptatem. Enim numquam velit sequi itaque sequi perferendis consequatur. Qui qui eveniet beatae.</p>
+					<p>Redesigned an initial template in Wordpress, using the Elementor plugin to make major revisions and create new pages. 
+					Added custom HTML, CSS, and PHP to further tweak changes to the theme, forms, and overall styling. 
+					Visit <a href='https://www.medicaldevicesuccess.com/' target="_blank">here</a>.	
+					</p>
 				</div>
 			</section>	
 			<section className='section-two'>

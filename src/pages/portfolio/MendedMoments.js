@@ -57,7 +57,7 @@ const MendedMoments = () => {
 					<p>Created a simple Wordpress website, logo, and print materials that would give users an "old timey" vintage feel while maintaing solid UI/UX design.
 					 Detailed the process of restoring old and damaged photos by using the Elementor plugin to add before/after sliders. With the help of WooCommerce and 
 					 and an additional plugin, user image uploads and custom order options were expanded upon in the checkout process.
-					 Visit <a href='https://mendedmoments.com/'>here</a>.	
+					 Visit <a href='https://mendedmoments.com/' target="_blank">here</a>.	
 					</p>
 				</div>
 			</section>	

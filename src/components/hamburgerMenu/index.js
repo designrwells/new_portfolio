@@ -30,7 +30,7 @@ const Navbar = styled.nav`
 	z-index: 100;
 	display: flex;
 	justify-content: center;
-	margin: 13vh 0 0 40vw;
+	margin: 13vh 0 0 32vw;
 `;
 const NavItems = styled(motion.div)`
 	display: flex;
@@ -41,7 +41,7 @@ const NavbarLink = styled(Link)`
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 600;
-	font-size: clamp(2rem, 4.6vw, 120px);
+	font-size: clamp(3.2rem, 4.6vw, 120px);
 	line-height: 1.27;
 	cursor: pointer;
 	position: relative;
@@ -62,7 +62,7 @@ const SocialLinks = styled(motion.div)`
 	display: flex;
 	justify-content: left;
 	a {
-		font-size: clamp(1.3rem, 1.8vw, 40px);
+		font-size: clamp(1.5rem, 1.8vw, 40px);
 		text-decoration: none;
 		color: rgba(235, 243, 248,0.5);
 		margin: 6rem 3% 0 3%;
@@ -109,11 +109,11 @@ const HamburgerMenu = () => {
 							animate={isOpen ? 'open' : 'closed'}
 							variants={navItemVariants}	
 						>
-							<a href="http://www.facebook.com/darrin.wells88"><i class="fa fa-facebook"></i></a>
-							<a href="http://www.instagram.com/designrwells/"><i class="fa fa-instagram"></i></a>
-							<a href="http://twitter.com/DesignrWells"><i class="fa fa-twitter"></i></a>
-							<a href="http://drivenimage.deviantart.com/"><i class="fa fa-deviantart"></i></a>
-							<a href="http://www.linkedin.com/in/darrinwells"><i class="fa fa-linkedin"></i></a>
+							<a href="http://www.facebook.com/darrin.wells88" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="http://www.instagram.com/designrwells/" target="_blank"><i class="fa fa-instagram"></i></a>
+							<a href="http://twitter.com/DesignrWells" target="_blank"><i class="fa fa-twitter"></i></a>
+							<a href="http://drivenimage.deviantart.com/" target="_blank"><i class="fa fa-deviantart"></i></a>
+							<a href="http://www.linkedin.com/in/darrinwells" target="_blank"><i class="fa fa-linkedin"></i></a>
 						</SocialLinks>
 					</NavItems>
 				</Navbar>
