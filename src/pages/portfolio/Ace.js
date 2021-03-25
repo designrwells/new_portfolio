@@ -56,7 +56,7 @@ const Ace = () => {
 					</p>
 				</div>
 			</section>	
-			<section className='section-two'>
+			<section className='section-three'>
 					<div className='img-column'>
 						<img src={Ace_Img1} alt='Ace Automotive banner design' />
 						<img src={Ace_Img2} alt='Printing the banner'/>

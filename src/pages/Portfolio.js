@@ -10,6 +10,7 @@ import PortfolioGrid from '../components/PortfolioGrid';
 const Section = styled.section`
 	background: #252E36;
 	min-height: 100vh;
+	padding-bottom: 7%;
 `;
 const Title = styled.div`
 	padding: 3% 3% 4% 3%;
@@ -31,7 +32,6 @@ const Portfolio = () => {
 			<Section>
 				<Title>p o r t f o l i o</Title>
 				<PortfolioGrid />
-
 			</Section>	
 		</motion.div>
 		)

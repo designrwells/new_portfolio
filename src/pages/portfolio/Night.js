@@ -63,9 +63,8 @@ const Night = () => {
 			</section>	
 			<section className='section-three'>
 					<div className='img-column'>
-						<img src={Night_Img1} alt='Aurora Borealis' />
-					</div>
-					<div className='img-column'>					
+						<img className='wide-photo' src={Night_Img1} alt='Aurora Borealis' />
+										
 						<img src={Night_Img4} alt='' />
 						<img src={Night_Img5} alt='' />
 					</div>	
