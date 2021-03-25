@@ -59,7 +59,7 @@ const TNTAutoMart = () => {
 					</p>
 				</div>
 			</section>	
-			<section className='section-two'>
+			<section className='section-three'>
 					<div className='img-column'>
 						<img src={TNT_Img2} alt='TNT AutoMart Logo' />
 						<img src={TNT_Img1} alt='TNT AutoMart Website Front Page' />
